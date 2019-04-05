@@ -1,7 +1,9 @@
-
 ``` 
 mpvue中使用Vant Weapp
+参考:https://github.com/Rychou/mpvue-vant
 
+
+使用步骤:
 1.从Vant Weapp官网github克隆一份代码下来
 https://github.com/youzan/vant-weapp 
 
@@ -23,6 +25,12 @@ https://github.com/youzan/vant-weapp
 
 4.使用
 <van-button>测试</van-button>
+
+
+
+
+
+
 
 
 
