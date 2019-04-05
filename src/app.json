@@ -1,8 +1,7 @@
 {
   "pages": [
     "pages/index/main",
-    "pages/logs/main",
-    "pages/counter/main"
+    "pages/readme/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,8 +22,8 @@
         "selectedIconPath": "static/tabs/home-active.png"
       },
       {
-        "text": "订单",
-        "pagePath": "pages/logs/main",
+        "text": "说明",
+        "pagePath": "pages/readme/main",
         "iconPath": "static/tabs/orders.png",
         "selectedIconPath": "static/tabs/orders-active.png"
       }
