@@ -1,7 +1,5 @@
 ``` 
 mpvue中使用Vant Weapp
-参考:https://github.com/Rychou/mpvue-vant
-
 
 使用步骤:
 1.从Vant Weapp官网github克隆一份代码下来
@@ -30,6 +28,8 @@ https://github.com/youzan/vant-weapp
 
 
 
+参考:https://github.com/Rychou/mpvue-vant
+Vant Weapp官网:https://youzan.github.io/vant-weapp 
 
 
 
