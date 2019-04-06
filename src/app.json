@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/main",
+    "pages/button/main",
     "pages/readme/main"
   ],
   "window": {
