@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/main",
     "pages/button/main",
+    "pages/tab/main",
     "pages/readme/main"
   ],
   "window": {
