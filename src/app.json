@@ -3,6 +3,7 @@
     "pages/index/main",
     "pages/button/main",
     "pages/tab/main",
+    "pages/tag/main",
     "pages/readme/main"
   ],
   "window": {

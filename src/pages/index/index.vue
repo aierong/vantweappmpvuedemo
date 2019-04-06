@@ -53,6 +53,14 @@
           {
             txt : 'tab' ,
             pageurl : 'tab'
+          } ,
+          {
+            txt : 'cell' ,
+            pageurl : 'cell'
+          } ,
+          {
+            txt : 'tag标签' ,
+            pageurl : 'tag'
           }
 
         ] ,
