@@ -8,6 +8,7 @@
     "pages/datetimepicker/main",
     "pages/mycollapse/main",
     "pages/mypanel/main",
+    "pages/steps/main",
     "pages/readme/main"
   ],
   "window": {

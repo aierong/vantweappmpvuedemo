@@ -64,14 +64,17 @@
             txt : 'Tab 标签页' ,
             pageurl : 'tab'
           } ,
+
           {
             txt : 'Cell 单元格' ,
             pageurl : 'cell'
           } ,
+
           {
             txt : 'tag标签' ,
             pageurl : 'tag'
           } ,
+
           {
             txt : 'Collapse 折叠面板' ,
             pageurl : 'mycollapse'
@@ -79,6 +82,11 @@
           {
             txt : 'Panel 面板' ,
             pageurl : 'mypanel'
+          } ,
+
+          {
+            txt : 'Steps 步骤条' ,
+            pageurl : 'steps'
           } ,
 
         ] ,
@@ -105,6 +113,6 @@
 
 <style src="./index.css"
        scoped>
-
-
 </style>
+
+
