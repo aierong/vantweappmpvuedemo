@@ -74,7 +74,7 @@
           } ,
           {
             txt : 'Collapse 折叠面板' ,
-            pageurl : 'collapse'
+            pageurl : 'mycollapse'
           } ,
 
         ] ,
