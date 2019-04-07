@@ -12,7 +12,8 @@
               @click="onclick"
               value="内容"
               is-link/>
-
+    <mybr/>
+    <mybr/>
     <van-cell value="内容"
               icon="shop-o"
               is-link>
@@ -22,7 +23,8 @@
         <van-tag type="danger">标签</van-tag>
       </view>
     </van-cell>
-
+    <mybr/>
+    <mybr/>
     <van-cell title="单元格">
       <van-icon slot="right-icon"
                 name="search"
@@ -34,8 +36,13 @@
 
 <!-- js脚本代码片段 -->
 <script>
+  import mybr from '@/components/mybr/mybr.vue'
+
   export default {
     name : "cell" ,
+    components : {
+      mybr
+    } ,
     //数据模型
     data () {
       return {

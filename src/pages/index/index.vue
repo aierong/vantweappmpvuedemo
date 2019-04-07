@@ -61,11 +61,11 @@
           } ,
 
           {
-            txt : 'tab' ,
+            txt : 'Tab 标签页' ,
             pageurl : 'tab'
           } ,
           {
-            txt : 'cell' ,
+            txt : 'Cell 单元格' ,
             pageurl : 'cell'
           } ,
           {

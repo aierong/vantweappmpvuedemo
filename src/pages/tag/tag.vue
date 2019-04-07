@@ -11,7 +11,8 @@
     <van-tag type="danger">标签</van-tag>
     <van-tag type="primary">标签</van-tag>
     <van-tag type="success">标签</van-tag>
-    <br>
+    <mybr/>
+    <mybr/>
     <van-tag plain>标签</van-tag>
     <van-tag plain
              type="danger">标签
@@ -22,7 +23,8 @@
     <van-tag plain
              type="success">标签
     </van-tag>
-    <br>
+    <mybr/>
+    <mybr/>
     <van-tag round>标签</van-tag>
     <van-tag round
              type="danger">标签
@@ -33,7 +35,8 @@
     <van-tag round
              type="success">标签
     </van-tag>
-    <br>
+    <mybr/>
+    <mybr/>
     <van-tag mark>标签</van-tag>
     <van-tag mark
              type="danger">标签
@@ -44,7 +47,8 @@
     <van-tag mark
              type="success">标签
     </van-tag>
-    <br>
+    <mybr/>
+    <mybr/>
     <van-tag color="#f2826a">标签</van-tag>
     <van-tag color="#f2826a"
              plain>标签
@@ -56,9 +60,12 @@
     <van-tag color="#ffe1e1"
              text-color="#ad0000">标签
     </van-tag>
-    <br>
+    <mybr/>
+    <mybr/>
     <van-tag>标签</van-tag>
-    <van-tag color="#ffe1e1" size="medium">标签</van-tag>
+    <van-tag color="#ffe1e1"
+             size="medium">标签
+    </van-tag>
     <van-tag size="large">标签</van-tag>
   </div>
 
@@ -66,8 +73,13 @@
 
 <!-- js脚本代码片段 -->
 <script>
+  import mybr from '@/components/mybr/mybr.vue'
+
   export default {
     name : "tag" ,
+    components : {
+      mybr
+    } ,
     //数据模型
     data () {
       return {
