@@ -14,10 +14,13 @@
       <van-tab title="标签 3">内容 3</van-tab>
       <van-tab title="标签 4">内容 4</van-tab>
     </van-tabs>
-    <br><br><br>
-    <!--    多于 4 个标签时，Tab 可以横向滚动-->
+    <mybr/>
+    <mybr/>
+    <!--
+    多于 4 个标签时，Tab可横向滚动
+    -->
     <div>Tab可横向滚动</div>
-    <van-tabs :active=" active ">
+    <van-tabs :active="active2">
       <van-tab title="标签 1">内容 1</van-tab>
       <van-tab title="标签 2">内容 2</van-tab>
       <van-tab title="标签 3">内容 3</van-tab>
@@ -28,24 +31,91 @@
       <van-tab title="标签8">内容8</van-tab>
       <van-tab title="标签9">内容9</van-tab>
     </van-tabs>
+
+    <mybr/>
+    <mybr/>
+    <!--
+    disabled 点击被禁用的标签时触发
+    -->
+    <div>禁用tab，并且响应事件</div>
+    <van-tabs @disabled="onClickDisabled"
+              :active="active3">
+      <van-tab title="标签 1">内容 1</van-tab>
+      <van-tab title="标签 2"
+               disabled>内容 2
+      </van-tab>
+      <van-tab title="标签 3">内容 3</van-tab>
+    </van-tabs>
+    <mybr/>
+    <mybr/>
+    <div>tab单击</div>
+    <!--
+    单击事件中好像取不到索引和标题,建议还是使用change
+    -->
+    <van-tabs @click="onClick4"
+              @change="onChange4"
+              :active="active4">
+      <van-tab title="标签 1">内容 1</van-tab>
+      <van-tab title="标签 2">内容 2</van-tab>
+    </van-tabs>
   </div>
 
 </template>
 
 <!-- js脚本代码片段 -->
 <script>
+  import mybr from '@/components/mybr/mybr.vue'
+
   export default {
     name : "tab" ,
+    components : {
+      mybr
+    } ,
     //数据模型
     data () {
       return {
         //从0开始的
-        active : 2
+        active : 2 ,
+
+        active2 : 0 ,
+
+        active3 : 0 ,
+
+        active4 : 1
       }
     } ,
     //方法
     methods : {
       onChange ( event ) {
+        //代码搞这里
+        console.log( event )
+
+        //选择的索引
+        console.log( event.mp.detail.index )
+        //标题
+        console.log( event.mp.detail.title )
+
+        //console.log( this.active )
+      } ,
+      onClickDisabled ( event ) {
+        //选择的索引
+        console.log( event.mp.detail.index )
+        //标题
+        console.log( event.mp.detail.title )
+      } ,
+      onClick4 ( event ) {
+        console.log( event )
+
+        //单击事件中好像取不到索引和标题,建议还是使用change
+
+        // //选择的索引
+        // console.log( event.mp.detail.index )
+        // //标题
+        // console.log( event.mp.detail.title )
+
+        // console.log( this.active4 )
+      } ,
+      onChange4 ( event ) {
         //代码搞这里
         console.log( event )
 
