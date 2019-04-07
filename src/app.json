@@ -5,6 +5,7 @@
     "pages/tab/main",
     "pages/tag/main",
     "pages/icon/main",
+    "pages/datetimepicker/main",
     "pages/readme/main"
   ],
   "window": {

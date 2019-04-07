@@ -56,6 +56,11 @@
           } ,
 
           {
+            txt : 'DatetimePicker 时间选择' ,
+            pageurl : 'datetimepicker'
+          } ,
+
+          {
             txt : 'tab' ,
             pageurl : 'tab'
           } ,
