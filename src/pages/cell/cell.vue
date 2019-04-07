@@ -20,7 +20,10 @@
       <view slot="title">
         <!--        <view class="van-cell-text">单元格</view>-->
         <span>单元格</span>
-        <van-tag type="danger">标签</van-tag>
+        <van-tag round
+                 plain
+                 type="danger">9
+        </van-tag>
       </view>
     </van-cell>
     <mybr/>
