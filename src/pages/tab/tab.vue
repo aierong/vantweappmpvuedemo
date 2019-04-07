@@ -5,7 +5,13 @@
 
 <!-- html代码片段 -->
 <template>
+  <!--
+  特别提示:
+  van-tabs组件的:active="active"不是双向数据绑定,
+  所以tab切换后active值已经不是最新的啦!如果需要保持最新,需要在事件change中主动赋值一下
 
+  collapse也有类似情况
+  -->
   <div>
     <van-tabs :active="active"
               @change="onChange">
