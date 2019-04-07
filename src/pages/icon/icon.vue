@@ -7,14 +7,17 @@
 <template>
 
   <div>
-    <div></div><div></div>
+    <mybr/>
     <van-icon name="close"/>
+    <mybr/>
     <van-icon name="https://b.yzcdn.cn/vant/icon-demo-1126.png"/>
-    <div></div>
+    <mybr/>
     <van-icon name="chat"
               info="9"/>
+    <mybr/>
     <van-icon size="40px"
               name="chat"
+              color="red"
               info="99+"/>
   </div>
 
@@ -22,8 +25,13 @@
 
 <!-- js脚本代码片段 -->
 <script>
+  import mybr from '@/components/mybr/mybr.vue'
+
   export default {
     name : "icon" ,
+    components : {
+      mybr
+    } ,
     //数据模型
     data () {
       return {
