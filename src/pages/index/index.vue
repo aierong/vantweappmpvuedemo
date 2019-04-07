@@ -51,6 +51,11 @@
           } ,
 
           {
+            txt : 'Icon 图标' ,
+            pageurl : 'icon'
+          } ,
+
+          {
             txt : 'tab' ,
             pageurl : 'tab'
           } ,
@@ -61,7 +66,7 @@
           {
             txt : 'tag标签' ,
             pageurl : 'tag'
-          }
+          } ,
 
         ] ,
 

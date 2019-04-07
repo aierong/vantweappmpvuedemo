@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+
+    "van-icon": "/static/vant/icon/index"
+  },
+  "navigationBarTitleText": "icon图标"
+}
+
+
