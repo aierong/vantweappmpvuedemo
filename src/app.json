@@ -6,6 +6,7 @@
     "pages/tag/main",
     "pages/icon/main",
     "pages/datetimepicker/main",
+    "pages/collapse/main",
     "pages/readme/main"
   ],
   "window": {

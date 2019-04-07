@@ -72,6 +72,10 @@
             txt : 'tag标签' ,
             pageurl : 'tag'
           } ,
+          {
+            txt : 'Collapse 折叠面板' ,
+            pageurl : 'collapse'
+          } ,
 
         ] ,
 
