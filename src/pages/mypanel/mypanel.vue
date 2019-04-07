@@ -7,15 +7,43 @@
 <template>
 
   <div>
-    mypanel
+    <van-panel title="标题"
+               desc="描述信息"
+               status="状态a">
+      <view>内容</view>
+    </van-panel>
+    <mybr/>
+    <mybr/>
+
+    <van-panel title="标题"
+               desc="描述信息"
+               status="状态2"
+               use-footer-slot>
+      <view>内容</view>
+      <!--
+      加个样式把按钮搞右边去
+      -->
+      <view style="text-align: right;"
+            slot="footer">
+        <van-button size="small">按钮</van-button>
+        <van-button size="small"
+                    type="danger">按钮
+        </van-button>
+      </view>
+    </van-panel>
   </div>
 
 </template>
 
 <!-- js脚本代码片段 -->
 <script>
+  import mybr from '@/components/mybr/mybr.vue'
+
   export default {
     name : "mypanel" ,
+    components : {
+      mybr
+    } ,
     //数据模型
     data () {
       return {
