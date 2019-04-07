@@ -7,7 +7,21 @@
 <template>
 
   <div>
-    datetimepicker
+    <van-datetime-picker
+      type="datetime"
+      :value="currentDate"
+      :min-date="minDate"
+      :max-date="maxDate"
+      :show-toolbar="isshow"
+      @change="onchange"
+      @input="onInput"/>
+
+    <van-datetime-picker
+      type="date"
+      :value="currentDate2"
+      :min-date=" minDate "
+      @change="onchange"
+    />
   </div>
 
 </template>
@@ -19,15 +33,26 @@
     //数据模型
     data () {
       return {
-        msg : ''
+        minHour : 10 ,
+        maxHour : 20 ,
+        minDate : new Date().getTime() ,
+        maxDate : new Date( 2019 , 10 , 1 ).getTime() ,
+        currentDate : new Date().getTime() ,
+
+        currentDate2 : new Date().getTime() ,
+        isshow : false
       }
     } ,
     //方法
     methods : {
-      //methodsname() {
-      //代码搞这里
-      //},
+      onInput ( event ) {
+        //代码搞这里
+        console.log( event )
+      } ,
+      onchange ( ev ) {
+        console.log( ev )
 
+      }
     } ,
     //计算属性
     computed : {
