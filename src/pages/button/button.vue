@@ -19,7 +19,31 @@
     <van-button @click="dj"
                 type="danger">危险按钮
     </van-button>
-
+    <mybr/>
+    <van-button plain
+                type="primary">朴素按钮
+    </van-button>
+    <van-button plain
+                type="danger">朴素按钮
+    </van-button>
+    <mybr/>
+    <van-button disabled
+                type="primary">禁用状态
+    </van-button>
+    <van-button disabled
+                type="danger">禁用状态
+    </van-button>
+    <mybr/>
+    <van-button loading
+                type="primary"/>
+    <van-button loading
+                type="danger"
+                loading-text="加载中..."/>
+    <mybr/>
+    <van-button size="large">大号按钮</van-button>
+    <van-button size="normal">普通按钮</van-button>
+    <van-button size="small">小型按钮</van-button>
+    <van-button size="mini">迷你按钮</van-button>
   </div>
 
 </template>
