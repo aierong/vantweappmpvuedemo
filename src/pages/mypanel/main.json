@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-panel": "/static/vant/panel/index"
+  },
+  "navigationBarTitleText": "Panel 面板"
+}
+
+

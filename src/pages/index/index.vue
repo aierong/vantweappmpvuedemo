@@ -76,6 +76,10 @@
             txt : 'Collapse 折叠面板' ,
             pageurl : 'mycollapse'
           } ,
+          {
+            txt : 'Panel 面板' ,
+            pageurl : 'mypanel'
+          } ,
 
         ] ,
 
