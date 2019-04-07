@@ -8,13 +8,14 @@
 
   <div>
     <van-button type="default">默认按钮</van-button>
-    <br><br>
+
+    <mybr></mybr>
     <van-button type="primary">主要按钮</van-button>
-    <br><br>
+    <mybr/>
     <van-button type="info">信息按钮</van-button>
-    <br><br>
+    <mybr/>
     <van-button type="warning">警告按钮</van-button>
-    <br><br>
+    <mybr/>
     <van-button @click="dj"
                 type="danger">危险按钮
     </van-button>
@@ -25,8 +26,13 @@
 
 <!-- js脚本代码片段 -->
 <script>
+  import mybr from '@/components/mybr/mybr.vue'
+
   export default {
     name : "button" ,
+    components : {
+      mybr
+    } ,
     //数据模型
     data () {
       return {
