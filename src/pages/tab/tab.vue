@@ -13,8 +13,8 @@
   collapse也有类似情况
   -->
   <div>
-    <van-tabs :active="active"
-              @change="onChange">
+    <van-tabs :active="active1"
+              @change="onChange1">
       <van-tab title="标签 1">内容 1</van-tab>
       <van-tab title="标签 2">内容 2</van-tab>
       <van-tab title="标签 3">内容 3</van-tab>
@@ -26,16 +26,19 @@
     多于 4 个标签时，Tab可横向滚动
     -->
     <div>Tab可横向滚动</div>
-    <van-tabs :active="active2">
-      <van-tab title="标签 1">内容 1</van-tab>
-      <van-tab title="标签 2">内容 2</van-tab>
-      <van-tab title="标签 3">内容 3</van-tab>
-      <van-tab title="标签 4">内容 4</van-tab>
-      <van-tab title="标签 5">内容 5</van-tab>
-      <van-tab title="标签 6">内容 6</van-tab>
+    <van-tabs @change="onChange2"
+              :active="active2">
+      <van-tab title="标签1">内容 1</van-tab>
+      <van-tab title="标签2">内容 2</van-tab>
+      <van-tab title="标签3">内容 3</van-tab>
+      <van-tab title="标签4">内容 4</van-tab>
+      <van-tab title="标签5">内容 5</van-tab>
+      <van-tab title="标签6">内容 6</van-tab>
       <van-tab title="标签7">内容7</van-tab>
       <van-tab title="标签8">内容8</van-tab>
       <van-tab title="标签9">内容9</van-tab>
+      <van-tab title="标签10">内容10</van-tab>
+      <van-tab title="标签11">内容11</van-tab>
     </van-tabs>
 
     <mybr/>
@@ -81,7 +84,7 @@
     data () {
       return {
         //从0开始的
-        active : 2 ,
+        active1 : 2 ,
 
         active2 : 0 ,
 
@@ -92,7 +95,7 @@
     } ,
     //方法
     methods : {
-      onChange ( event ) {
+      onChange1 ( event ) {
         //代码搞这里
         console.log( event )
 
@@ -101,7 +104,17 @@
         //标题
         console.log( event.mp.detail.title )
 
-        //console.log( this.active )
+        console.log( this.active1 )
+        //最好手动赋值一下,要不值不是最新的
+        this.active1 = event.mp.detail.index;
+
+        console.log( this.active1 )
+      } ,
+      onChange2 ( event ) {
+        //最好手动赋值一下,要不值不是最新的
+        this.active2 = event.mp.detail.index;
+
+        console.log( this.active2 )
       } ,
       onClickDisabled ( event ) {
         //选择的索引
