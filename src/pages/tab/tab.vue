@@ -47,7 +47,8 @@
     disabled 点击被禁用的标签时触发
     -->
     <div>禁用tab，并且响应事件</div>
-    <van-tabs @disabled="onClickDisabled"
+    <van-tabs @change="onChange3"
+              @disabled="onClickDisabled"
               :active="active3">
       <van-tab title="标签 1">内容 1</van-tab>
       <van-tab title="标签 2"
@@ -116,6 +117,12 @@
 
         console.log( this.active2 )
       } ,
+      onChange3 ( event ) {
+        //最好手动赋值一下,要不值不是最新的
+        this.active3 = event.mp.detail.index;
+
+        console.log( this.active3 )
+      } ,
       onClickDisabled ( event ) {
         //选择的索引
         console.log( event.mp.detail.index )
@@ -140,6 +147,11 @@
 
         //选择的索引
         console.log( event.mp.detail.index )
+
+        //最好手动赋值一下,要不值不是最新的
+        this.active4 = event.mp.detail.index;
+
+        console.log( this.active4 )
       } ,
 
     } ,
