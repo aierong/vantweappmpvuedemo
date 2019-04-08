@@ -33,9 +33,7 @@
                            :value="currentDate3"
                            :min-date="minDate3"
                            @confirm="onconfirm3"
-                           @cancel="oncancel3"
-
-      />
+                           @cancel="oncancel3"/>
     </van-popup>
     <van-button @click="dj3"
                 size="small">弹出popup选择日期
