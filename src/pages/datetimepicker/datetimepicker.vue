@@ -7,29 +7,42 @@
 <template>
 
   <div>
-    <van-datetime-picker
-      type="datetime"
-      :value="currentDate"
-      :min-date="minDate"
-      :max-date="maxDate"
-      :show-toolbar="isshow"
-      @change="onchange"
-      @input="onInput"/>
-
-    <van-datetime-picker
-      type="date"
-      :value="currentDate2"
-      :min-date=" minDate "
-      @change="onchange"
-    />
+    <!--
+    change事件好像无法取到值,可以用input事件
+    -->
+    <van-datetime-picker type="datetime"
+                         :value="currentDate"
+                         :min-date="minDate"
+                         :max-date="maxDate"
+                         :show-toolbar="isshow"
+                         @input="oninput1"
+                         @change="onchange1"/>
+    <mybr/>
+    <mybr/>
+    <!--
+        confirm	点击完成按钮时触发的事件
+        cancel	点击取消按钮时触发的事件
+        -->
+    <van-datetime-picker type="date"
+                         :value="currentDate2"
+                         :min-date="minDate"
+                         @confirm="onconfirm2"
+                         @cancel="oncancel2"
+                         @input="oninput2"
+                         @change="onchange2"/>
   </div>
 
 </template>
 
 <!-- js脚本代码片段 -->
 <script>
+  import mybr from '@/components/mybr/mybr.vue'
+
   export default {
     name : "datetimepicker" ,
+    components : {
+      mybr
+    } ,
     //数据模型
     data () {
       return {
@@ -45,14 +58,59 @@
     } ,
     //方法
     methods : {
-      onInput ( event ) {
-        //代码搞这里
-        console.log( event )
-      } ,
-      onchange ( ev ) {
-        console.log( ev )
+      oninput1 ( event ) {
+        //   //代码搞这里
+        console.log( 'oninput1' , event )
 
-      }
+        //console.log( event.mp.detail )
+
+        const { detail , currentTarget } = event.mp;
+
+        console.log( detail )
+        console.log( currentTarget )
+
+        const date = new Date( detail );
+
+        console.log( date )
+        console.log( date.toLocaleString() )
+      } ,
+      onchange1 ( event ) {
+        // console.log( event )
+        // console.log( event.mp.detail )
+        // console.log( event.mp.detail.children )
+
+      } ,
+      oninput2 ( event ) {
+        const { detail , currentTarget } = event.mp;
+
+        console.log( detail )
+        console.log( currentTarget )
+
+        const date = new Date( detail );
+
+        console.log( date )
+        console.log( date.toLocaleDateString() )
+      } ,
+      onchange2 ( ev ) {
+        //console.log( 'onchange2' , ev )
+
+      } ,
+      onconfirm2 ( event ) {
+        console.log( 'onconfirm2' , event )
+
+        const { detail , currentTarget } = event.mp;
+
+        console.log( detail )
+        console.log( currentTarget )
+
+        const date = new Date( detail );
+
+        console.log( date )
+        console.log( date.toLocaleDateString() )
+      } ,
+      oncancel2 ( event ) {
+        console.log( 'oncancel2' , event )
+      } ,
     } ,
     //计算属性
     computed : {
