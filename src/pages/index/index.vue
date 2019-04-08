@@ -89,6 +89,11 @@
             pageurl : 'steps'
           } ,
 
+          {
+            txt : 'Popup 弹出层' ,
+            pageurl : 'mypopup'
+          } ,
+
         ] ,
 
       }

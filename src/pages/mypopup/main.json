@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-popup": "/static/vant/popup/index"
+  },
+  "navigationBarTitleText": "Popup 弹出层"
+}
+
+
