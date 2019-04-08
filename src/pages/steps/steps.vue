@@ -22,7 +22,9 @@
     <mybr/>
     <mybr/>
     <!--
-    van-steps暂时不支持，一个个加载
+    van-steps暂时不支持，一个个van-step加载 也就无法循环加载
+
+    只可以绑定到模型中，模型中的desc无法控制格式或者换行
     -->
 
     <!--    <van-steps :active="active2"-->
