@@ -11,6 +11,7 @@
     "pages/steps/main",
     "pages/mypopup/main",
     "pages/checkbox/main",
+    "pages/field/main",
     "pages/readme/main"
   ],
   "window": {

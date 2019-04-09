@@ -98,6 +98,10 @@
             txt : 'Checkbox 复选框' ,
             pageurl : 'checkbox'
           } ,
+          {
+            txt : 'Field 输入框' ,
+            pageurl : 'field'
+          } ,
 
         ] ,
 
