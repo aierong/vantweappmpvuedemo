@@ -94,6 +94,11 @@
             pageurl : 'mypopup'
           } ,
 
+          {
+            txt : 'Checkbox 复选框' ,
+            pageurl : 'checkbox'
+          } ,
+
         ] ,
 
       }

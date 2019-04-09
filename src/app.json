@@ -10,6 +10,7 @@
     "pages/mypanel/main",
     "pages/steps/main",
     "pages/mypopup/main",
+    "pages/checkbox/main",
     "pages/readme/main"
   ],
   "window": {
