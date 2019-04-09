@@ -102,6 +102,7 @@
         console.log( this.sms )
       } ,
       onClickIcon () {
+        // 注册了click-icon事件,好像没有反应
         console.log( 'q1' )
 
         wx.showToast( {
