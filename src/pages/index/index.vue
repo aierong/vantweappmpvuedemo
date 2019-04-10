@@ -102,6 +102,10 @@
             txt : 'Field 输入框' ,
             pageurl : 'field'
           } ,
+          {
+            txt : 'Layout 布局' ,
+            pageurl : 'layout'
+          } ,
 
         ] ,
 
