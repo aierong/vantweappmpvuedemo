@@ -38,6 +38,25 @@
     <van-button @click="dj3"
                 size="small">弹出popup选择日期
     </van-button>
+    <mybr/>
+
+    <van-button @click="toggleRightPopup">右侧弹出</van-button>
+    <van-popup :show="show.right"
+               position="right"
+               custom-class="right"
+               @close="toggleRightPopup">
+      <van-button @click="toggleRightPopup"
+                  class="demo-margin-right">关闭弹层
+      </van-button>
+
+      <van-button @click="toggleRightPopup2">右侧弹出</van-button>
+      <van-popup :show="show.right2"
+                 position="right"
+                 custom-class="right"
+                 @close="toggleRightPopup2">
+        <van-button @click="toggleRightPopup2">关闭弹层</van-button>
+      </van-popup>
+    </van-popup>
   </div>
 
 </template>
@@ -59,7 +78,13 @@
         show3 : false ,
 
         currentDate3 : new Date().getTime() ,
-        minDate3 : new Date().getTime()
+        minDate3 : new Date().getTime() ,
+
+        show : {
+
+          right : false ,
+          right2 : false
+        } ,
       }
     } ,
     //方法
@@ -101,6 +126,12 @@
       oncancel3 ( event ) {
         this.show3 = false;
       } ,
+      toggleRightPopup () {
+        this.show.right = !this.show.right
+      } ,
+      toggleRightPopup2 () {
+        this.show.right2 = !this.show.right2
+      } ,
     } ,
     //计算属性
     computed : {
@@ -117,7 +148,6 @@
 </script>
 
 <!-- 样式代码片段  scoped -->
-<style src="./mypopup.css"
-       scoped>
+<style src="./mypopup.css">
 
 </style>
