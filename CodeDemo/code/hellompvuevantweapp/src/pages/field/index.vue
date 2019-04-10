@@ -15,7 +15,7 @@
       icon="question-o"
       icon-class="icon"
       required
-      @click-icon="onClickIcon"
+      @clickicon="onClickIcon"
     />
     <van-field
       :value="password"

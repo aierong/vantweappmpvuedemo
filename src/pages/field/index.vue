@@ -21,6 +21,7 @@
     <van-panel title="自定义类型">
       <!--
       注册了click-icon事件,好像没有反应
+      @click-icon="onClickIcon"
       -->
       <van-field :value="username"
                  label="用户名"
@@ -29,7 +30,8 @@
                  icon="question-o"
                  icon-class="icon"
                  required
-                 @click-icon="onClickIcon"/>
+                 @clickicon="onClickIcon"
+      />
       <van-field :value="password"
                  type="password"
                  label="密码"
@@ -105,15 +107,6 @@
         // 注册了click-icon事件,好像没有反应
         console.log( 'q1' )
 
-        wx.showToast( {
-          title : 'q' , //提示的内容,
-          icon : 'success' , //图标,
-          duration : 2000 , //延迟时间,
-          mask : true , //显示透明蒙层，防止触摸穿透,
-          success : res => {
-            console.log( res )
-          }
-        } );
       } ,
     } ,
     //计算属性

@@ -125,7 +125,7 @@ VantComponent({
       }
     },
     onClickIcon: function onClickIcon() {
-      this.$emit('click-icon');
+      this.$emit('clickicon');
     },
     getShowClear: function getShowClear(value) {
       value = value === undefined ? this.data.value : value;

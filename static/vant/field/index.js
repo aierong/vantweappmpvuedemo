@@ -103,7 +103,7 @@ VantComponent({
             }
         },
         onClickIcon() {
-            this.$emit('click-icon');
+            this.$emit('clickicon');
         },
         getShowClear(value) {
             value = value === undefined ? this.data.value : value;
