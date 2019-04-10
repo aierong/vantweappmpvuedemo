@@ -18,7 +18,7 @@ https://github.com/zxz-googleman/hello-mpvue-vantweapp
 
 2.小程序开发工具打开后，首页报错
 解决办法:
-
+App.vue文件中下面的样式代码屏蔽即可
 
 
 
