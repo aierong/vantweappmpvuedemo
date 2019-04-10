@@ -10,7 +10,7 @@
 	},
 	"miniprogramRoot": "dist/wx/",
 	"compileType": "miniprogram",
-	"appid": "wx7504b31c98fe62da",
+	"appid": "wxea4707081907fd91",
 	"projectname": "hello-mpvue-vantweapp",
 	"condition": {
 		"search": {
