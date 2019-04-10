@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Dialog 弹出框",
+  "usingComponents": {
+    "van-button": "/static/vant/button/index",
+    "van-dialog": "/static/vant/dialog/index",
+    "van-panel": "/static/vant/panel/index"
+  }
+}

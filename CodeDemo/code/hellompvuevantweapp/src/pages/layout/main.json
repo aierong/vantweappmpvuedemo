@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-row": "/static/vant/row/index",
+    "van-col": "/static/vant/col/index"
+  }
+}

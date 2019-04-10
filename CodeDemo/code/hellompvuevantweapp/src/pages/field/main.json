@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Field 输入框",
+  "usingComponents":{
+    "van-panel":"/static/vant/panel/index",
+    "van-field":"/static/vant/field/index"
+  }
+}

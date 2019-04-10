@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "Collapse 折叠面板",
+  "usingComponents":{
+    "van-panel":"/static/vant/panel/index",
+    "van-collapse":"/static/vant/collapse/index",
+    "van-collapse-item":"/static/vant/collapse-item/index",
+    "van-icon":"/static/vant/icon/index"
+  }
+}

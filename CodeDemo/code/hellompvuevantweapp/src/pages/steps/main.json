@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Steps 步骤条",
+  "usingComponents":{
+    "van-button":"/static/vant/button/index",
+    "van-panel":"/static/vant/panel/index",
+    "van-steps":"/static/vant/steps/index"
+  }
+}
