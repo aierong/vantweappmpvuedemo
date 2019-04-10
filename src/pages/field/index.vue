@@ -20,8 +20,11 @@
     <mybr/>
     <van-panel title="自定义类型">
       <!--
-      注册了click-icon事件,好像没有反应
       @click-icon="onClickIcon"
+      注册了click-icon事件,好像没有反应
+
+      解决办法:
+      到static目录下field目录下的源码的click-icon改成clickicon
       -->
       <van-field :value="username"
                  label="用户名"
@@ -104,8 +107,8 @@
         console.log( this.sms )
       } ,
       onClickIcon () {
-        // 注册了click-icon事件,好像没有反应
-        console.log( 'q1' )
+        //
+        console.log( 'dj' )
 
       } ,
     } ,
