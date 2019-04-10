@@ -45,8 +45,7 @@
                position="right"
                custom-class="right"
                @close="toggleRightPopup">
-      <van-button @click="toggleRightPopup"
-                  class="demo-margin-right">关闭弹层
+      <van-button @click="toggleRightPopup">关闭弹层
       </van-button>
 
       <van-button @click="toggleRightPopup2">右侧弹出</van-button>

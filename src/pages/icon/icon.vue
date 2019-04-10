@@ -19,6 +19,9 @@
               name="chat"
               color="red"
               info="99+"/>
+    <mybr/>
+    <van-icon name="chat"
+              size="32px"/>
   </div>
 
 </template>
@@ -60,7 +63,6 @@
 </script>
 
 <!-- 样式代码片段  scoped -->
-<style src="./icon.css"
-       scoped>
+<style src="./icon.css">
 
 </style>
