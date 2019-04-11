@@ -27,27 +27,8 @@
                span="12">offset: 12, span: 12
       </van-col>
     </van-row>
-    <mybr/>
-    <mybr/>
-    <div>自做demo</div>
-    <van-row class="user-links">
-      <van-col span="6">
-        <van-icon class="mya" name="pending-payment" size="36px"/>
-        <br>待付款
-      </van-col>
-      <van-col span="6">
-        <van-icon class="mya" name="bag" size="36px"/>
-        <br>待接单
-      </van-col>
-      <van-col span="6">
-        <van-icon class="mya" name="fire" size="36px"/>
-        <br>待发货
-      </van-col>
-      <van-col span="6">
-        <van-icon class="mya" name="logistics" size="36px"/>
-        <br>待发货
-      </van-col>
-    </van-row>
+
+
   </div>
 
 </template>

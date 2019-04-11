@@ -110,6 +110,12 @@
             pageurl : 'layout'
           } ,
           {
+            txt : 'Layout布局(自做demo)' ,
+            pageurl : 'layoutdemo'
+          } ,
+
+
+          {
             txt : 'Popup 弹出层' ,
             pageurl : 'mypopup'
           } ,

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-row": "/static/vant/row/index",
+    "van-col": "/static/vant/col/index",
+    "van-icon": "/static/vant/icon/index"
+  },
+  "navigationBarTitleText": "布局自做demo"
+}
+
+
