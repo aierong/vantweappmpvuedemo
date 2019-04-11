@@ -84,6 +84,11 @@
             pageurl : 'checkbox'
           } ,
           {
+            txt : 'Radio 单选框' ,
+            pageurl : 'radios'
+          } ,
+
+          {
             txt : 'DatetimePicker 时间选择' ,
             pageurl : 'datetimepicker'
           } ,
@@ -113,7 +118,6 @@
             txt : 'Layout布局(自做demo)' ,
             pageurl : 'layoutdemo'
           } ,
-
 
           {
             txt : 'Popup 弹出层' ,

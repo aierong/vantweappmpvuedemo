@@ -14,6 +14,7 @@
     "pages/field/main",
     "pages/layout/main",
     "pages/layoutdemo/main",
+    "pages/radios/main",
     "pages/readme/main"
   ],
   "window": {
