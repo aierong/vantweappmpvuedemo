@@ -1,41 +1,54 @@
 <template>
   <div>
 
-    <div v-for="(item,index) in mydemolist"
-         :key="index">
-      <van-cell :title="item.txt"
-                icon="location-o"
-                @click="onclick(item.pageurl)"
-                is-link/>
-    </div>
-    <!--    <van-cell title="按钮"-->
-    <!--              icon="location-o"-->
-    <!--              @click="buttonclick"-->
-    <!--              is-link/>-->
-    <!--    <van-cell-->
-    <!--      title="单元格"-->
-    <!--      value="内容"-->
-    <!--      size="large"-->
-    <!--      label="描述信息"-->
-    <!--    />-->
+    <van-tabs @change="onChange2"
+              :active="active2">
+      <van-tab title="基础组件">
+        <van-cell :title="item.txt"
+                  icon="location-o"
+                  @click="onclick(item.pageurl)"
+                  is-link
+                  v-for="(item,index) in jichulist"
+                  :key="index"/>
+      </van-tab>
+      <van-tab title="表单组件">
+        <van-cell :title="item.txt"
+                  icon="location-o"
+                  @click="onclick(item.pageurl)"
+                  is-link
+                  v-for="(item,index) in biaodanlist"
+                  :key="index"/>
+      </van-tab>
+      <van-tab title="展示组件">
+        <van-cell :title="item.txt"
+                  icon="location-o"
+                  @click="onclick(item.pageurl)"
+                  is-link
+                  v-for="(item,index) in zhangshilist"
+                  :key="index"/>
+      </van-tab>
+      <van-tab title="导航组件">
 
-    <!--    <van-cell-->
-    <!--      title="单元格"-->
-    <!--      icon="location-o"-->
-    <!--    />-->
+        <van-cell v-for="(item,index) in daohanlist"
+                  :key="index"
+                  :title="item.txt"
+                  icon="location-o"
+                  @click="onclick(item.pageurl)"
+                  is-link/>
 
-    <!--    <van-cell-group>-->
-    <!--      <van-cell-->
-    <!--        title="单元格"-->
-    <!--        value="内容"-->
-    <!--      />-->
-    <!--      <van-cell-->
-    <!--        title="单元格"-->
-    <!--        value="内容"-->
-    <!--        label="描述信息"-->
-    <!--        border="false"-->
-    <!--      />-->
-    <!--    </van-cell-group>-->
+      </van-tab>
+
+
+      <van-tab title="待用">待用</van-tab>
+      <!--      <van-tab title="标签6">内容 6</van-tab>-->
+      <!--      <van-tab title="标签7">内容7</van-tab>-->
+      <!--      <van-tab title="标签8">内容8</van-tab>-->
+      <!--      <van-tab title="标签9">内容9</van-tab>-->
+      <!--      <van-tab title="标签10">内容10</van-tab>-->
+      <!--      <van-tab title="标签11">内容11</van-tab>-->
+    </van-tabs>
+
+
   </div>
 </template>
 
@@ -44,41 +57,9 @@
   export default {
     data () {
       return {
-        mydemolist : [
-          {
-            txt : '按钮' ,
-            pageurl : 'button'
-          } ,
-
-          {
-            txt : 'Icon 图标' ,
-            pageurl : 'icon'
-          } ,
-
-          {
-            txt : 'DatetimePicker 时间选择' ,
-            pageurl : 'datetimepicker'
-          } ,
-
-          {
-            txt : 'Tab 标签页' ,
-            pageurl : 'tab'
-          } ,
-
-          {
-            txt : 'Cell 单元格' ,
-            pageurl : 'cell'
-          } ,
-
-          {
-            txt : 'tag标签' ,
-            pageurl : 'tag'
-          } ,
-
-          {
-            txt : 'Collapse 折叠面板' ,
-            pageurl : 'mycollapse'
-          } ,
+        //从0开始的
+        active2 : 0 ,
+        zhangshilist : [
           {
             txt : 'Panel 面板' ,
             pageurl : 'mypanel'
@@ -88,23 +69,57 @@
             txt : 'Steps 步骤条' ,
             pageurl : 'steps'
           } ,
-
           {
-            txt : 'Popup 弹出层' ,
-            pageurl : 'mypopup'
+            txt : 'Collapse 折叠面板' ,
+            pageurl : 'mycollapse'
           } ,
-
+          {
+            txt : 'tag标签' ,
+            pageurl : 'tag'
+          } ,
+        ] ,
+        biaodanlist : [
           {
             txt : 'Checkbox 复选框' ,
             pageurl : 'checkbox'
           } ,
           {
+            txt : 'DatetimePicker 时间选择' ,
+            pageurl : 'datetimepicker'
+          } ,
+          {
             txt : 'Field 输入框' ,
             pageurl : 'field'
+          } ,
+        ] ,
+        jichulist : [
+          {
+            txt : '按钮' ,
+            pageurl : 'button'
+          } ,
+          {
+            txt : 'Icon 图标' ,
+            pageurl : 'icon'
+          } ,
+          {
+            txt : 'Cell 单元格' ,
+            pageurl : 'cell'
           } ,
           {
             txt : 'Layout 布局' ,
             pageurl : 'layout'
+          } ,
+          {
+            txt : 'Popup 弹出层' ,
+            pageurl : 'mypopup'
+          } ,
+        ] ,
+
+        daohanlist : [
+
+          {
+            txt : 'Tab 标签页' ,
+            pageurl : 'tab'
           } ,
 
         ] ,
@@ -120,6 +135,10 @@
       buttonclick () {
         const url = "../button/main"
         wx.navigateTo( { url : url } )
+      } ,
+      onChange2 ( event ) {
+        this.active2 = event.mp.detail.index;
+
       } ,
     } ,
 

@@ -2,7 +2,9 @@
   "usingComponents": {
     "van-button": "/static/vant/button/index",
     "van-cell": "/static/vant/cell/index",
-    "van-cell-group": "/static/vant/cell-group/index"
+    "van-cell-group": "/static/vant/cell-group/index",
+    "van-tab": "/static/vant/tab/index",
+    "van-tabs": "/static/vant/tabs/index"
   },
   "navigationBarTitleText": "查看主页"
 }
