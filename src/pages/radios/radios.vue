@@ -20,6 +20,7 @@
     <mybr/>
     <mybr/>
     <div>与 Cell 组件一起使用</div>
+    <!--    实现单击cell或者radio都可以选择-->
     <van-radio-group :value="radio2"
                      @change="onChange2">
       <van-cell-group>

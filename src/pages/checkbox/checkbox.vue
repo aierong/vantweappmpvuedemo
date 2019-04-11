@@ -35,15 +35,16 @@
 
     <mybr/>
     <mybr/>
-    <van-checkbox-group value="resulta"
+    <div>与Cell组件一起使用</div>
+    <!--    实现单击cell或者checkbox都可以选择-->
+    <van-checkbox-group :value="resulta"
                         @change="onChangea">
       <van-cell-group>
         <van-cell v-for="(item,index) in lista"
                   :key="index"
-                  :title="复选框 {{ item }}"
-                  clickable
                   :data-name="item"
-                  @click="celltoggle">
+                  @click="celltoggle"
+                  :title="'复选框'+ item">
           <van-checkbox :name="item"/>
         </van-cell>
       </van-cell-group>
@@ -92,13 +93,29 @@
         this.result1 = ev.mp.detail;
       } ,
       onChangea ( ev ) {
+        console.log( ev )
 
+        this.resulta = ev.mp.detail;
       } ,
       celltoggle ( ee ) {
         console.log( ee )
+
         console.log( ee.mp.currentTarget.dataset.name )
 
+        let val = ee.mp.currentTarget.dataset.name;
+
+        let index = this.resulta.indexOf( val );
+        if ( index <= -1 ) {
+          //不存在就添加进去
+          this.resulta.push( val )
+        }
+        else {
+          //之前存在 现在把它干了
+          this.resulta.splice( index , 1 );
+        }
+
       } ,
+
     } ,
     //计算属性
     computed : {
@@ -115,7 +132,7 @@
 </script>
 
 <!-- 样式代码片段  scoped -->
-<style src="./index.css"
+<style src="./checkbox.css"
        scoped>
 
 </style>
