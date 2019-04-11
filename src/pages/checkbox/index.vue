@@ -32,6 +32,22 @@
         复选框 {{ item }}
       </van-checkbox>
     </van-checkbox-group>
+
+    <mybr/>
+    <mybr/>
+    <van-checkbox-group value="resulta"
+                        @change="onChangea">
+      <van-cell-group>
+        <van-cell v-for="(item,index) in lista"
+                  :key="index"
+                  :title="复选框 {{ item }}"
+                  clickable
+                  :data-name="item"
+                  @click="celltoggle">
+          <van-checkbox :name="item"/>
+        </van-cell>
+      </van-cell-group>
+    </van-checkbox-group>
   </div>
 
 </template>
@@ -53,6 +69,9 @@
 
         result1 : [ 'A' , 'B' ] ,
         list1 : [ 'A' , 'B' , 'C' , 'D' ] ,
+
+        lista : [ 'a' , 'b' , 'c' ] ,
+        resulta : [ 'a' , 'b' ]
       }
     } ,
     //方法
@@ -71,6 +90,14 @@
         console.log( ev )
 
         this.result1 = ev.mp.detail;
+      } ,
+      onChangea ( ev ) {
+
+      } ,
+      celltoggle ( ee ) {
+        console.log( ee )
+        console.log( ee.mp.currentTarget.dataset.name )
+
       } ,
     } ,
     //计算属性
