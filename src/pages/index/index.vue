@@ -96,6 +96,10 @@
             txt : 'Field 输入框' ,
             pageurl : 'field'
           } ,
+          {
+            txt : 'Search 搜索' ,
+            pageurl : 'search'
+          } ,
         ] ,
         jichulist : [
           {
