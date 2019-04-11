@@ -1,8 +1,8 @@
 <template>
   <div>
 
-    <van-tabs @change="onChange2"
-              :active="active2">
+    <van-tabs @change="onChangeval"
+              :active="activeval">
       <van-tab title="基础组件">
         <van-cell :title="item.txt"
                   icon="location-o"
@@ -58,7 +58,7 @@
     data () {
       return {
         //从0开始的
-        active2 : 0 ,
+        activeval : 1 ,
         zhangshilist : [
           {
             txt : 'Panel 面板' ,
@@ -146,8 +146,8 @@
         const url = "../button/main"
         wx.navigateTo( { url : url } )
       } ,
-      onChange2 ( event ) {
-        this.active2 = event.mp.detail.index;
+      onChangeval ( event ) {
+        this.activeval = event.mp.detail.index;
 
       } ,
     } ,

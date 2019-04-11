@@ -3,30 +3,46 @@
 功能:vue页
 -->
 
-<!-- html代码片段 -->
+<!--
+ 特别提示:
+ 需要注册change事件,实现双向数据绑定
+-->
 <template>
 
   <div>
-    radios
+    <!--    通过value绑定值当前选中项的 name-->
+    <van-radio-group :value="radio1"
+                     @change="onChange1">
+      <van-radio name="1">单选框 1</van-radio>
+      <van-radio name="2">单选框 2</van-radio>
+    </van-radio-group>
   </div>
 
 </template>
 
 <!-- js脚本代码片段 -->
 <script>
+  import mybr from '@/components/mybr/mybr.vue'
+
   export default {
     name : "radios" ,
+    components : {
+      mybr
+    } ,
     //数据模型
     data () {
       return {
-        msg : ''
+        radio1 : '1'
       }
     } ,
     //方法
     methods : {
-      //methodsname() {
-      //代码搞这里
-      //},
+      onChange1 ( ev ) {
+        //代码搞这里
+        console.log( ev )
+
+        this.radio1 = ev.mp.detail;
+      } ,
 
     } ,
     //计算属性
