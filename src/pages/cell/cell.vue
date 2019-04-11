@@ -14,6 +14,16 @@
               is-link/>
     <mybr/>
     <mybr/>
+    <div>单击事件,还可以取到其他参数</div>
+    <van-cell title="标题"
+              icon="location-o"
+              @click="onclick2"
+              value="内容"
+              clickable
+              :data-name="mydata"
+              is-link/>
+    <mybr/>
+    <mybr/>
     <van-cell value="内容"
               icon="shop-o"
               is-link>
@@ -49,7 +59,8 @@
     //数据模型
     data () {
       return {
-        msg : ''
+        msg : '' ,
+        mydata : 'qq'
       }
     } ,
     //方法
@@ -58,7 +69,11 @@
         //代码搞这里
         console.log( 'dj' )
       } ,
-
+      onclick2 ( ee ) {
+        // ee.mp.currentTarget.dataset.name 可以取到  van-cell 中设置的 data-name=""
+        let val = ee.mp.currentTarget.dataset.name;
+        console.log( val )
+      } ,
     } ,
     //计算属性
     computed : {
