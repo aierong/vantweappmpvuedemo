@@ -22,6 +22,6 @@
   }
 </script>
 
-<style src="./index.css">
+<style src="./readme.css">
 
 </style>
