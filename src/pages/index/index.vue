@@ -136,6 +136,11 @@
             pageurl : 'tab'
           } ,
 
+          {
+            txt : 'NavBar 导航栏' ,
+            pageurl : 'navbar'
+          } ,
+
         ] ,
 
       }
