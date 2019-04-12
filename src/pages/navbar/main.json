@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "van-nav-bar": "/static/vant/nav-bar/index"
+    "van-nav-bar": "/static/vant/nav-bar/index",
+    "van-icon": "/static/vant/icon/index"
   },
   "navigationBarTitleText": "NavBar 导航栏"
 }

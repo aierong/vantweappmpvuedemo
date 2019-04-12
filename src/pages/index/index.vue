@@ -39,13 +39,9 @@
       </van-tab>
 
 
-      <van-tab title="待用">待用</van-tab>
+      <!--      <van-tab title="待用">待用</van-tab>-->
       <!--      <van-tab title="标签6">内容 6</van-tab>-->
-      <!--      <van-tab title="标签7">内容7</van-tab>-->
-      <!--      <van-tab title="标签8">内容8</van-tab>-->
-      <!--      <van-tab title="标签9">内容9</van-tab>-->
-      <!--      <van-tab title="标签10">内容10</van-tab>-->
-      <!--      <van-tab title="标签11">内容11</van-tab>-->
+
     </van-tabs>
 
 
