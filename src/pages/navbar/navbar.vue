@@ -33,7 +33,7 @@
     methods : {
       onClickLeft () {
         wx.navigateBack()
-
+        //wx.navigateBack()
       } ,
       onClickRight () {
         console.log( 'onClickRight' )
