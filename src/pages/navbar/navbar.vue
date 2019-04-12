@@ -7,7 +7,14 @@
 <template>
 
   <div>
-    navbar
+    <!--    @click-left="onClickLeft"-->
+    <!--    @click-right="onClickRight"-->
+    <van-nav-bar title="标题"
+                 left-text="返回"
+                 right-text="按钮"
+                 left-arrow
+                 @clickleft="onClickLeft"
+                 @clickright="onClickRight"/>
   </div>
 
 </template>
@@ -24,10 +31,13 @@
     } ,
     //方法
     methods : {
-      //methodsname() {
-      //代码搞这里
-      //},
+      onClickLeft () {
+        wx.navigateBack()
 
+      } ,
+      onClickRight () {
+        console.log( 'onClickRight' )
+      } ,
     } ,
     //计算属性
     computed : {

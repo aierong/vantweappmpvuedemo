@@ -1,8 +1,6 @@
 {
   "usingComponents": {
-    "van-popup": "/static/vant/popup/index",
-    "van-button": "/static/vant/button/index",
-    "van-datetime-picker": "/static/vant/datetime-picker/index"
+    "van-nav-bar": "/static/vant/nav-bar/index"
   },
   "navigationBarTitleText": "NavBar 导航栏"
 }
