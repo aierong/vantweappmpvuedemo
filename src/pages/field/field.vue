@@ -71,7 +71,7 @@
   import mybr from '@/components/mybr/mybr.vue'
 
   export default {
-    name : "index" ,
+    name : "field" ,
     components : {
       mybr
     } ,
@@ -127,7 +127,7 @@
 </script>
 
 <!-- 样式代码片段  scoped -->
-<style src="./index.css"
+<style src="./field.css"
        scoped>
 
 </style>
