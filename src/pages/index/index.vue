@@ -29,7 +29,7 @@
       </van-tab>
       <van-tab title="导航组件">
 
-        <van-cell v-for="(item,index) in daohanlist"
+        <van-cell v-for="(item,index) in DaoHanList"
                   :key="index"
                   :title="item.txt"
                   icon="location-o"
@@ -72,6 +72,10 @@
           {
             txt : 'tag标签' ,
             pageurl : 'tag'
+          } ,
+          {
+            txt : 'NoticeBar 通告栏' ,
+            pageurl : 'noticebar'
           } ,
         ] ,
         biaodanlist : [
@@ -125,7 +129,7 @@
           } ,
         ] ,
 
-        daohanlist : [
+        DaoHanList : [
 
           {
             txt : 'Tab 标签页' ,

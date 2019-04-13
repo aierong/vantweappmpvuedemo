@@ -17,6 +17,7 @@
     "pages/radios/main",
     "pages/search/main",
     "pages/navbar/main",
+    "pages/noticebar/main",
     "pages/readme/main"
   ],
   "window": {
