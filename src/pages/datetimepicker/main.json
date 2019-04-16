@@ -2,7 +2,7 @@
   "usingComponents": {
     "van-datetime-picker": "/static/vant/datetime-picker/index"
   },
-  "navigationBarTitleText": "DatetimePicker 时间选择"
+  "navigationBarTitleText": "时间选择"
 }
 
 

@@ -26,8 +26,8 @@
     <van-datetime-picker type="date"
                          :value="currentDate2"
                          :min-date="minDate"
-                         @confirm="onconfirm2"
-                         @cancel="oncancel2"
+                         @confirm="userselectdate"
+                         @cancel="usercancel"
                          @input="oninput2"
                          @change="onchange2"/>
   </div>
@@ -95,7 +95,7 @@
         //console.log( 'onchange2' , ev )
 
       } ,
-      onconfirm2 ( event ) {
+      userselectdate ( event ) {
         console.log( 'onconfirm2' , event )
 
         const { detail , currentTarget } = event.mp;
@@ -107,8 +107,18 @@
 
         console.log( date )
         console.log( date.toLocaleDateString() )
+
+        wx.showToast( {
+          title : date.toLocaleDateString() , //提示的内容,
+          icon : 'success' , //图标,
+          duration : 2000 , //延迟时间,
+          mask : true , //显示透明蒙层，防止触摸穿透,
+          success : res => {
+            console.log( res )
+          }
+        } );
       } ,
-      oncancel2 ( event ) {
+      usercancel ( event ) {
         console.log( 'oncancel2' , event )
       } ,
     } ,

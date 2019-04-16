@@ -28,12 +28,12 @@
     <mybr/>
     <van-popup :show="show3"
                position="bottom">
-      <!--      <div>选择</div>-->
+
       <van-datetime-picker type="date"
                            :value="currentDate3"
                            :min-date="minDate3"
-                           @confirm="onconfirm3"
-                           @cancel="oncancel3"/>
+                           @confirm="userselectdate"
+                           @cancel="usercancel"/>
     </van-popup>
     <van-button @click="dj3"
                 size="small">弹出popup选择日期
@@ -104,10 +104,8 @@
       dj3 () {
         this.show3 = true;
       } ,
-      // onClose3 () {
-      //
-      // } ,
-      onconfirm3 ( event ) {
+
+      userselectdate ( event ) {
         //console.log( 'onconfirm2' , event )
 
         const { detail , currentTarget } = event.mp;
@@ -120,9 +118,19 @@
         console.log( date )
         console.log( date.toLocaleDateString() )
 
+        wx.showToast( {
+          title : date.toLocaleDateString() , //提示的内容,
+          icon : 'success' , //图标,
+          duration : 2000 , //延迟时间,
+          mask : true , //显示透明蒙层，防止触摸穿透,
+          success : res => {
+            console.log( res )
+          }
+        } );
+
         this.show3 = false;
       } ,
-      oncancel3 ( event ) {
+      usercancel ( event ) {
         this.show3 = false;
       } ,
       toggleRightPopup () {
