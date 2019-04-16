@@ -18,6 +18,7 @@
     "pages/search/main",
     "pages/navbar/main",
     "pages/noticebar/main",
+    "pages/cells/main",
     "pages/readme/main"
   ],
   "window": {

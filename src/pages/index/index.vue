@@ -112,7 +112,7 @@
           } ,
           {
             txt : 'Cell 单元格' ,
-            pageurl : 'cell'
+            pageurl : 'cells'
           } ,
           {
             txt : 'Layout 布局' ,

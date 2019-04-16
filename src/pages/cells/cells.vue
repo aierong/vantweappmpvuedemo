@@ -52,7 +52,7 @@
   import mybr from '@/components/mybr/mybr.vue'
 
   export default {
-    name : "cell" ,
+    name : "cells" ,
     components : {
       mybr
     } ,
@@ -91,6 +91,6 @@
 
 <!-- 样式代码片段  scoped -->
 <style scoped
-       src="./cell.css">
+       src="./cells.css">
 
 </style>
