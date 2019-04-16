@@ -6,7 +6,5 @@
     "van-tag": "/static/vant/tag/index",
     "van-icon": "/static/vant/icon/index"
   },
-  "navigationBarTitleText": "cell"
+  "navigationBarTitleText": "cell表格"
 }
-
-

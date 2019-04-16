@@ -92,8 +92,5 @@
 <!-- 样式代码片段  scoped -->
 <style scoped
        src="./cell.css">
-  .custom-text {
-    margin-right: 5px;
-    vertical-align: middle;
-  }
+
 </style>
