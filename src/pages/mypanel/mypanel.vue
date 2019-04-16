@@ -25,9 +25,12 @@
       -->
       <view style="text-align: right;"
             slot="footer">
-        <van-button size="small">按钮</van-button>
-        <van-button size="small"
-                    type="danger">按钮
+        <van-button @click="dja"
+                    size="small">按钮A
+        </van-button>
+        <van-button @click="djb"
+                    size="small"
+                    type="danger">按钮B
         </van-button>
       </view>
     </van-panel>
@@ -52,9 +55,28 @@
     } ,
     //方法
     methods : {
-      //methodsname() {
-      //代码搞这里
-      //},
+      dja () {
+        wx.showToast( {
+          title : 'a' , //提示的内容,
+          icon : 'success' , //图标,
+          duration : 2000 , //延迟时间,
+          mask : true , //显示透明蒙层，防止触摸穿透,
+          success : res => {
+            console.log( res )
+          }
+        } );
+      } ,
+      djb () {
+        wx.showToast( {
+          title : 'b' , //提示的内容,
+          icon : 'success' , //图标,
+          duration : 2000 , //延迟时间,
+          mask : true , //显示透明蒙层，防止触摸穿透,
+          success : res => {
+            console.log( res )
+          }
+        } );
+      } ,
 
     } ,
     //计算属性
