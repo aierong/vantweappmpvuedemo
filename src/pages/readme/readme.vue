@@ -23,9 +23,9 @@
     } ,
     onShareAppMessage () {
       return {
-        title : '猫叫助手|与猫咪交流的好帮手' ,
+        title : 'Vant Weapp在mpvue中使用demo' ,
         path : '/pages/index/main' ,
-        imageUrl : '/static/img/code.jpg'
+        imageUrl : '/static/img/logo.png'
       }
     } ,
     created () {
