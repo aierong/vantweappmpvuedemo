@@ -1,7 +1,8 @@
 <template>
   <div>
     见本项目readme.md文件
-
+    <mybr/>
+    <mybr/>
     <button open-type="share">分享我吧</button>
   </div>
 </template>
