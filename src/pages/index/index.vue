@@ -54,7 +54,7 @@
     data () {
       return {
         //从0开始的
-        activeval : 1 ,
+        activeval : 0 ,
         zhangshilist : [
           {
             txt : 'Panel 面板' ,
@@ -113,6 +113,10 @@
           {
             txt : 'Cell 单元格' ,
             pageurl : 'cells'
+          } ,
+          {
+            txt : 'Cell单元格' ,
+            pageurl : 'mycell'
           } ,
           {
             txt : 'Layout 布局' ,

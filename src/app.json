@@ -5,6 +5,7 @@
     "pages/tab/main",
     "pages/tag/main",
     "pages/icon/main",
+    "pages/mycell/main",
     "pages/datetimepicker/main",
     "pages/mycollapse/main",
     "pages/mypanel/main",
@@ -18,7 +19,6 @@
     "pages/search/main",
     "pages/navbar/main",
     "pages/noticebar/main",
-    "pages/cells/main",
     "pages/readme/main"
   ],
   "window": {
