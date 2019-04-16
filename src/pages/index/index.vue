@@ -110,10 +110,7 @@
             txt : 'Icon 图标' ,
             pageurl : 'icon'
           } ,
-          {
-            txt : 'Cell 单元格' ,
-            pageurl : 'cells'
-          } ,
+
           {
             txt : 'Cell单元格' ,
             pageurl : 'mycell'
