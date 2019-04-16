@@ -20,8 +20,10 @@
 
     <van-nav-bar title="标题"
                  left-text="返回"
+                 @clickleft="onClickLeft2"
                  left-arrow>
-      <van-icon name="search"
+      <van-icon @click="dj"
+                name="search"
                 slot="right"/>
     </van-nav-bar>
   </div>
@@ -45,12 +47,39 @@
     } ,
     //方法
     methods : {
-      onClickLeft () {
+      backpage () {
         wx.navigateBack()
-        //wx.navigateBack()
+      } ,
+      onClickLeft () {
+        this.backpage();
+
+      } ,
+      onClickLeft2 () {
+        this.backpage();
+      } ,
+      dj () {
+        wx.showToast( {
+          title : '点圈了' , //提示的内容,
+          icon : 'success' , //图标,
+          duration : 2000 , //延迟时间,
+          mask : true , //显示透明蒙层，防止触摸穿透,
+          success : res => {
+            console.log( res )
+          }
+        } );
       } ,
       onClickRight () {
         console.log( 'onClickRight' )
+
+        wx.showToast( {
+          title : '点我了' , //提示的内容,
+          icon : 'success' , //图标,
+          duration : 2000 , //延迟时间,
+          mask : true , //显示透明蒙层，防止触摸穿透,
+          success : res => {
+            console.log( res )
+          }
+        } );
       } ,
     } ,
     //计算属性
