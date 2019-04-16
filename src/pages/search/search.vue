@@ -25,7 +25,7 @@
                 @change="onchange2"
                 @search="onSearch2">
       <view slot="action"
-            @tap="onSearch3">搜索
+            @tap="userSearch">搜索
       </view>
     </van-search>
   </div>
@@ -58,6 +58,17 @@
         console.log( val )
 
         console.log( this.value1 )
+
+        wx.showToast( {
+          title : val , //提示的内容,
+          icon : 'success' , //图标,
+          duration : 2000 , //延迟时间,
+          mask : true , //显示透明蒙层，防止触摸穿透,
+          success : res => {
+            console.log( res )
+          }
+        } );
+
         // 最好 把模型同步一下
         this.value1 = val;
       } ,
@@ -65,6 +76,8 @@
       onCancel ( event ) {
         //这个参数好像没有啥用
         console.log( event )
+
+        this.value1 = "";
       } ,
       onSearch2 ( event ) {
         console.log( event )
@@ -82,10 +95,20 @@
         // 最好 把模型同步一下
         this.value2 = val;
       } ,
-      onSearch3 ( event ) {
+      userSearch ( event ) {
         console.log( event )
 
         //要从模型this.value2中取值
+
+        wx.showToast( {
+          title : this.value2 , //提示的内容,
+          icon : 'success' , //图标,
+          duration : 2000 , //延迟时间,
+          mask : true , //显示透明蒙层，防止触摸穿透,
+          success : res => {
+            console.log( res )
+          }
+        } );
       } ,
     } ,
     //计算属性
