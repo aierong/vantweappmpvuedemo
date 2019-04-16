@@ -105,10 +105,30 @@
       } ,
       onSendSms () {
         console.log( this.sms )
+
+        wx.showToast( {
+          title : '发验证码' , //提示的内容,
+          icon : 'success' , //图标,
+          duration : 2000 , //延迟时间,
+          mask : true , //显示透明蒙层，防止触摸穿透,
+          success : res => {
+            console.log( res )
+          }
+        } );
       } ,
       onClickIcon () {
         //
         console.log( 'dj' )
+
+        wx.showToast( {
+          title : '我点你了' , //提示的内容,
+          icon : 'success' , //图标,
+          duration : 2000 , //延迟时间,
+          mask : true , //显示透明蒙层，防止触摸穿透,
+          success : res => {
+            console.log( res )
+          }
+        } );
 
       } ,
     } ,
