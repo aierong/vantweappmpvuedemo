@@ -1,7 +1,8 @@
 <template>
   <div>
-    见本项目readme.md文件
+    Vant Weapp组件库官方示例改写到Mpvue框架下
     <mybr/>
+
     <mybr/>
     <button open-type="share">分享我吧</button>
   </div>
