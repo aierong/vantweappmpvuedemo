@@ -1,7 +1,7 @@
 **mpvue中使用Vant Weapp**  
 
-Vant Weapp组件库官方示例改写到Mpvue框架下
-
+Vant Weapp组件库官方示例改写到Mpvue框架下  
+https://github.com/aierong/vantweappmpvuedemo
 
 
 
