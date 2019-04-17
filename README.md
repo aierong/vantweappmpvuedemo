@@ -6,7 +6,7 @@ https://github.com/aierong/vantweappmpvuedemo
 
 
 
-扫描体验一下:
+可以手机扫描体验一下:
 
 ![](barcode.jpg)
 
