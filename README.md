@@ -1,5 +1,9 @@
 mpvue中使用Vant Weapp
 
+扫描体验一下:
+
+![](barcode.jpg)
+
 
 
 
@@ -39,7 +43,7 @@ Vant Weapp官网:
 https://youzan.github.io/vant-weapp 
 
 
-扫描一下:
+
 
 
 
@@ -56,7 +60,3 @@ https://youzan.github.io/vant-weapp
 ```
 
 
-
-
-
-![](barcode.jpg)
