@@ -1,5 +1,10 @@
-``` 
 mpvue中使用Vant Weapp
+
+
+
+
+``` 
+
 
 使用步骤:
 1.从Vant Weapp官网github克隆一份代码下来
@@ -51,3 +56,7 @@ https://youzan.github.io/vant-weapp
 ```
 
 
+
+
+
+![](barcode.jpg)
