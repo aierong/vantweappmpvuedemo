@@ -24,7 +24,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "mpvue中使用Vant Weapp",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
