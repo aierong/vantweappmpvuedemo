@@ -2,7 +2,9 @@
   <div>
     Vant Weapp组件库官方示例改写到Mpvue框架下
     <mybr/>
-
+    <mybr/>
+    https://github.com/aierong/vantweappmpvuedemo
+    <mybr/>
     <mybr/>
     <button open-type="share">分享我吧</button>
   </div>
