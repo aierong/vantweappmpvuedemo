@@ -21,6 +21,9 @@
     <mybr/>
     <van-button @click="showSuccessToast">成功提示</van-button>
     <van-button @click="showFailToast">失败提示</van-button>
+    <mybr/>
+    <mybr/>
+    <van-button @click="showCustomizedToast">高级用法</van-button>
     <!--
     注意要配一个van-toast,才会显示提示 ,默认id van-toast
 
@@ -70,6 +73,29 @@
       } ,
       showFailToast () {
         Toast.fail( '失败提示' );
+      } ,
+      showCustomizedToast () {
+        //高级用法
+        const text = second => `倒计时 ${ second } 秒`;
+        const toast = Toast.loading( {
+          duration : 0 ,
+          forbidClick : true ,
+          loadingType : 'spinner' ,
+          message : text( 3 )
+        } );
+
+        let second = 3;
+
+        const timer = setInterval( () => {
+          second--;
+          if ( second ) {
+            toast.setData( { message : text( second ) } );
+          }
+          else {
+            clearInterval( timer );
+            Toast.clear();
+          }
+        } , 1000 );
       } ,
     } ,
     //计算属性
