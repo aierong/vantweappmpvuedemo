@@ -17,6 +17,10 @@
     <mybr/>
     <mybr/>
     <van-button @click="showLoadingToast">加载提示</van-button>
+    <mybr/>
+    <mybr/>
+    <van-button @click="showSuccessToast">成功提示</van-button>
+    <van-button @click="showFailToast">失败提示</van-button>
     <!--
     注意要配一个van-toast,才会显示提示 ,默认id van-toast
 
@@ -60,6 +64,12 @@
           mask : true ,
           message : '加载中...'
         } );
+      } ,
+      showSuccessToast () {
+        Toast.success( '成功文案' );
+      } ,
+      showFailToast () {
+        Toast.fail( '失败提示' );
       } ,
     } ,
     //计算属性
