@@ -3,7 +3,7 @@
     "van-panel": "/static/vant/panel/index",
     "van-button": "/static/vant/button/index"
   },
-  "navigationBarTitleText": "mytoast"
+  "navigationBarTitleText": "Toast 轻提示"
 }
 
 

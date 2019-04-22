@@ -7,7 +7,7 @@
 <template>
 
   <div>
-
+    Toast 轻提示
   </div>
 
 </template>

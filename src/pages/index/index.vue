@@ -158,10 +158,10 @@
             pageurl : 'mynotify'
           } ,
 
-          // {
-          //   txt : 'NavBar 导航栏' ,
-          //   pageurl : 'navbar'
-          // } ,
+          {
+            txt : 'Toast 轻提示' ,
+            pageurl : 'mytoast'
+          } ,
 
         ] ,
 
