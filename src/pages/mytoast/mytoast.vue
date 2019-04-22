@@ -93,6 +93,7 @@
           }
           else {
             clearInterval( timer );
+            //关闭提示
             Toast.clear();
           }
         } , 1000 );
