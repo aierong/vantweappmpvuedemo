@@ -7,15 +7,39 @@
 <template>
 
   <div>
-    Toast 轻提示
+    <mybr/>
+    <mybr/>
+    <van-button @click="showToast"
+                class="demo-margin-right">文字提示
+    </van-button>
+
+    <van-button @click="showLongToast">长文字提示</van-button>
+    <mybr/>
+    <mybr/>
+    <van-button @click="showLoadingToast">加载提示</van-button>
+    <!--
+    注意要配一个van-toast,才会显示提示 ,默认id van-toast
+
+    -->
+    <van-toast id="van-toast"/>
   </div>
 
 </template>
 
 <!-- js脚本代码片段 -->
 <script>
+  // 配置文件json也要配置,这里代码也要引用
+  // 代码中也要引用
+  // 注意引用路径
+  import Toast from '../../../static/vant/toast/toast';
+
+  import mybr from '@/components/mybr/mybr.vue'
+
   export default {
     name : "mytoast" ,
+    components : {
+      mybr
+    } ,
     //数据模型
     data () {
       return {
@@ -24,10 +48,19 @@
     } ,
     //方法
     methods : {
-      //methodsname() {
-      //代码搞这里
-      //},
-
+      showToast () {
+        Toast( '提示内容' );
+      } ,
+      showLongToast () {
+        Toast( '这是一条长文字提示，超过一定字数就会换行' );
+      } ,
+      showLoadingToast () {
+        //3000 会自动关闭
+        Toast.loading( {
+          mask : true ,
+          message : '加载中...'
+        } );
+      } ,
     } ,
     //计算属性
     computed : {
