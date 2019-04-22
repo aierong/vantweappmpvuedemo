@@ -1,7 +1,7 @@
 {
   "usingComponents": {
-    "van-panel": "/static/vant/panel/index",
-    "van-button": "/static/vant/button/index"
+    "van-button": "/static/vant/button/index",
+    "van-loading": "/static/vant/loading/index"
   },
   "navigationBarTitleText": "Loading 加载"
 }

@@ -7,15 +7,29 @@
 <template>
 
   <div>
-    loadingloading
+    <mybr/>
+    <mybr/>
+    <van-loading/>
+    <van-loading color="red"/>
+    <mybr/>
+    <mybr/>
+    <van-loading type="spinner"/>
+    <van-loading type="spinner"
+                 color="green"/>
   </div>
 
 </template>
 
 <!-- js脚本代码片段 -->
 <script>
+
+  import mybr from '@/components/mybr/mybr.vue'
+
   export default {
     name : "loading" ,
+    components : {
+      mybr
+    } ,
     //数据模型
     data () {
       return {
