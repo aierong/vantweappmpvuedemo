@@ -10,6 +10,7 @@
     <mybr/>
     <mybr/>
     <van-button @click="showNotify">显示消息通知</van-button>
+    <mybr/>
     <van-button @click="showNotify2">显示自定义消息通知</van-button>
     <!--
     注意要配一个van-notify,才会显示提示 ,默认id van-notify
