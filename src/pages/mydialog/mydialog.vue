@@ -14,6 +14,18 @@
                 @click="onClickAlert">
       消息提示
     </van-button>
+    <mybr/>
+    <van-button plain
+                type="primary"
+                @click="onClickAlert2">
+      无标题提示
+    </van-button>
+    <mybr/>
+    <van-button plain
+                type="primary"
+                @click="onClickConfirm">
+      消息确认
+    </van-button>
 
     <van-dialog id="van-dialog"/>
 
@@ -52,7 +64,27 @@
           message
         } );
       } ,
+      onClickAlert2 () {
+        const message = '有赞是一家零售科技公司，致力于成为商家服务领域里最被信任的引领者';
 
+        Dialog.alert( {
+          message
+        } );
+      } ,
+      onClickConfirm () {
+        const message = '有赞是一家零售科技公司，致力于成为商家服务领域里最被信任的引领者';
+
+        Dialog.confirm( {
+          title : '标题' ,
+          message
+        } ).then( () => {
+          // on confirm
+          console.log( '提交' )
+        } ).catch( () => {
+          // on cancel
+          console.log( '取消' )
+        } );
+      } ,
     } ,
     //计算属性
     computed : {
