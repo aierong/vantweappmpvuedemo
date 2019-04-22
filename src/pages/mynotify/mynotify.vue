@@ -7,7 +7,7 @@
 <template>
 
   <div>
-
+    mynotify
   </div>
 
 </template>

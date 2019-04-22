@@ -19,6 +19,7 @@
     "pages/search/main",
     "pages/navbar/main",
     "pages/noticebar/main",
+    "pages/mynotify/main",
     "pages/readme/main"
   ],
   "window": {

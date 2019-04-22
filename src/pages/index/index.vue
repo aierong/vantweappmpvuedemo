@@ -39,8 +39,18 @@
       </van-tab>
 
 
-      <!--      <van-tab title="待用">待用</van-tab>-->
-      <!--      <van-tab title="标签6">内容 6</van-tab>-->
+      <van-tab title="反馈组件">
+        <van-cell v-for="(item,index) in FanKuiList"
+                  :key="index"
+                  :title="item.txt"
+                  icon="location-o"
+                  @click="onclick(item.pageurl)"
+                  is-link/>
+      </van-tab>
+
+      <!--
+      <van-tab title="标签6">内容 6</van-tab>
+      -->
 
     </van-tabs>
 
@@ -131,7 +141,6 @@
         ] ,
 
         DaoHanList : [
-
           {
             txt : 'Tab 标签页' ,
             pageurl : 'tab'
@@ -141,6 +150,18 @@
             txt : 'NavBar 导航栏' ,
             pageurl : 'navbar'
           } ,
+
+        ] ,
+        FanKuiList : [
+          {
+            txt : 'Notify 消息提示' ,
+            pageurl : 'mynotify'
+          } ,
+
+          // {
+          //   txt : 'NavBar 导航栏' ,
+          //   pageurl : 'navbar'
+          // } ,
 
         ] ,
 
