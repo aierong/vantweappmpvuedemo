@@ -166,6 +166,10 @@
             txt : 'Loading 加载' ,
             pageurl : 'loading'
           } ,
+          {
+            txt : 'Dialog 弹出框' ,
+            pageurl : 'mydialog'
+          } ,
 
         ] ,
 
