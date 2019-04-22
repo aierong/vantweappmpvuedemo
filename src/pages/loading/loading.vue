@@ -46,5 +46,4 @@
 <!-- 样式代码片段  scoped -->
 <style src="./loading.css"
        scoped>
-
 </style>

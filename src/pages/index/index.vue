@@ -162,6 +162,10 @@
             txt : 'Toast 轻提示' ,
             pageurl : 'mytoast'
           } ,
+          {
+            txt : 'Loading 加载' ,
+            pageurl : 'loading'
+          } ,
 
         ] ,
 

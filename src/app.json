@@ -21,6 +21,7 @@
     "pages/noticebar/main",
     "pages/mynotify/main",
     "pages/mytoast/main",
+    "pages/loading/main",
     "pages/readme/main"
   ],
   "window": {
