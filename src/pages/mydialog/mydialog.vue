@@ -73,7 +73,7 @@
         } );
       } ,
       onClickConfirm () {
-        const message = '有赞是一家零售科技公司，致力于成为商家服务领域里最被信任的引领者';
+        const message = '有赞是一家零售科技公司,你确定加入吗?';
 
         Dialog.confirm( {
           title : '标题' ,
