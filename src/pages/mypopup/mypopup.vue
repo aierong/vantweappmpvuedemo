@@ -155,6 +155,7 @@
 </script>
 
 <!-- 样式代码片段  scoped -->
-<style src="./mypopup.css">
+<style scoped
+       src="./mypopup.css">
 
 </style>

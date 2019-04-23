@@ -25,6 +25,29 @@
                 @click="onClickConfirm">
       消息确认
     </van-button>
+
+    <van-button plain
+                type="danger"
+                @click="showCustomDialog">
+      组件调用
+    </van-button>
+    <!--
+    use-slot	是否使用自定义内容的插槽
+    close 关闭弹窗
+    -->
+    <van-dialog use-slot
+                :show="show"
+                show-cancel-button
+                @close="onClose">
+      <van-field :value="username"
+                 label="用户名"
+                 placeholder="请输入用户名"/>
+      <van-field :value="password"
+                 type="password"
+                 label="密码"
+                 border="false"
+                 placeholder="请输入密码"/>
+    </van-dialog>
     <!--
     注意要配一个van-dialog,才会显示提示 ,默认id van-dialog
     -->
@@ -51,7 +74,7 @@
     //数据模型
     data () {
       return {
-        msg : ''
+        show : false ,
       }
     } ,
     //方法
@@ -85,6 +108,25 @@
           // on cancel
           console.log( '取消' )
         } );
+      } ,
+      showCustomDialog () {
+        //把显示开关打开
+        this.show = true
+      } ,
+      //close 关闭弹窗
+      onClose ( event ) {
+        console.log( event.mp.detail )
+
+        if ( event.mp.detail === 'confirm' ) {
+          //点击了 确定按钮
+          console.log( '点击确定' )
+        }
+        else {
+          //点击了 取消按钮
+          console.log( '点击取消' )
+        }
+
+        this.show = false
       } ,
     } ,
     //计算属性
