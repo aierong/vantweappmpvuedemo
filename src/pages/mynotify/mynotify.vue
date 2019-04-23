@@ -14,9 +14,7 @@
     <van-button @click="showNotify2">显示自定义消息通知</van-button>
     <!--
     注意要配一个van-notify,才会显示提示 ,默认id van-notify
-
     -->
-
     <van-notify id="van-notify"/>
     <!--
 也可以自己定义一个id
@@ -82,5 +80,4 @@
 <!-- 样式代码片段  scoped -->
 <style scoped
        src="./mynotify.css">
-
 </style>
