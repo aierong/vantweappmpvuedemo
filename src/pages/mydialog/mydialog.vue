@@ -11,8 +11,7 @@
     <mybr/>
     <van-button plain
                 type="primary"
-                @click="onClickAlert">
-      消息提示
+                @click="onClickAlert">消息提示
     </van-button>
     <mybr/>
     <van-button plain
@@ -26,7 +25,9 @@
                 @click="onClickConfirm">
       消息确认
     </van-button>
-
+    <!--
+    注意要配一个van-dialog,才会显示提示 ,默认id van-dialog
+    -->
     <van-dialog id="van-dialog"/>
 
   </div>
