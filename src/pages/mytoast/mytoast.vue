@@ -23,10 +23,12 @@
     <van-button @click="showFailToast">失败提示</van-button>
     <mybr/>
     <mybr/>
+    <van-button @click="gjToast">高级用法(程序控制关闭)</van-button>
+    <mybr/>
     <van-button @click="showCustomizedToast">高级用法</van-button>
+
     <!--
     注意要配一个van-toast,才会显示提示 ,默认id van-toast
-
     -->
     <van-toast id="van-toast"/>
   </div>
@@ -74,11 +76,31 @@
       showFailToast () {
         Toast.fail( '失败提示' );
       } ,
+      gjToast () {
+        // duration	展示时长(ms)，值为 0 时，toast 不会消失
+        Toast.loading( {
+          duration : 0 ,
+          //forbidClick	是否禁止背景点击
+          forbidClick : true ,
+          loadingType : 'spinner' ,
+          message : '运算中...'
+        } );
+
+        // 5秒钟后 关闭
+        setInterval( () => {
+          //关闭提示
+          //Toast.clear		关闭提示
+          Toast.clear();
+        } , 5000 );
+      } ,
       showCustomizedToast () {
         //高级用法
         const text = second => `倒计时 ${ second } 秒`;
+
+        // duration	展示时长(ms)，值为 0 时，toast 不会消失
         const toast = Toast.loading( {
           duration : 0 ,
+          //forbidClick	是否禁止背景点击
           forbidClick : true ,
           loadingType : 'spinner' ,
           message : text( 3 )
