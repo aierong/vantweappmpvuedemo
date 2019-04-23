@@ -25,7 +25,7 @@
                 @click="onClickConfirm">
       消息确认
     </van-button>
-
+    <mybr/>
     <van-button plain
                 type="danger"
                 @click="showCustomDialog">
