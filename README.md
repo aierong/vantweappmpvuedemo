@@ -3,9 +3,9 @@
 Vant Weapp组件库官方示例改写到Mpvue框架下   
 https://github.com/aierong/vantweappmpvuedemo  
 
-   
-     
-   
+
+​     
+
 
 可以手机微信扫描体验一下: 
 
@@ -54,4 +54,18 @@ https://youzan.github.io/vant-weapp
 
 ```
 
+   
 
+功能预览:   
+
+![](mdresourcefile/ui1.png)
+
+
+
+
+
+![](mdresourcefile/ui2.png)
+
+
+
+![](mdresourcefile/ui3.png)
