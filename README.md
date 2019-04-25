@@ -7,7 +7,7 @@ https://github.com/aierong/vantweappmpvuedemo
 ​     
 
 
-可以手机微信扫描体验一下: 
+**可以手机微信扫描体验一下:** 
 
 ![](mdresourcefile/barcode.jpg)
 
@@ -56,7 +56,7 @@ https://youzan.github.io/vant-weapp
 
    
 
-功能预览:   
+**功能预览:**   
 
 ![](mdresourcefile/ui1.png)
 
