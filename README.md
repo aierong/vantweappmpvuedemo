@@ -4,7 +4,10 @@ Vant Weapp组件库官方示例改写到Mpvue框架下
 https://github.com/aierong/vantweappmpvuedemo  
 
 
-​     
+
+
+
+     
 
 
 **可以手机微信扫描体验一下:** 

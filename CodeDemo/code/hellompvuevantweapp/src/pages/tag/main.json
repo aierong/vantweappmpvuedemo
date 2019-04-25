@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "Tag 标记",
-  "usingComponents":{
-    "van-panel":"/static/vant/panel/index",
-    "van-tag":"/static/vant/tag/index"
-
-  }
-}

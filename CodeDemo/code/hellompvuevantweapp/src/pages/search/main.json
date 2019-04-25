@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "Search 搜索",
-  "usingComponents":{
-    "van-search":"/static/vant/search/index",
-    "van-panel":"/static/vant/panel/index"
-  }
-}
