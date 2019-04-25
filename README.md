@@ -8,7 +8,7 @@ https://github.com/aierong/vantweappmpvuedemo
 
 可以手机扫描体验一下:
 
-![](barcode.jpg)
+![](mdresourcefile/barcode.jpg)
 
 
 
