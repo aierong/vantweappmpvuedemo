@@ -39,6 +39,12 @@ https://github.com/youzan/vant-weapp
   }
 }
 
+也可以配置在app.json文件中(这样就不用每个页面都去配置,并且用户组件中也可以使用的)
+"usingComponents": {
+      "van-button": "/static/vant/button/index",
+      "van-cell": "/static/vant/cell/index",
+      "van-cell-group": "/static/vant/cell-group/index"
+}
 
 4.使用
 <van-button>测试</van-button>
@@ -75,6 +81,5 @@ https://youzan.github.io/vant-weapp
 
 
 ![](mdresourcefile/ui3.png)
-
 
 
