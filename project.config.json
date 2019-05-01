@@ -12,6 +12,8 @@
 	"compileType": "miniprogram",
 	"appid": "wxea4707081907fd91",
 	"projectname": "vantweappmpvuedemp",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
