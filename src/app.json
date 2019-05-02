@@ -5,6 +5,7 @@
     "pages/tab/main",
     "pages/tag/main",
     "pages/icon/main",
+    "pages/iconall/main",
     "pages/mycell/main",
     "pages/datetimepicker/main",
     "pages/mycollapse/main",

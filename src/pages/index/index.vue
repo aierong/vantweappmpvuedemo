@@ -117,8 +117,12 @@
             pageurl : 'button'
           } ,
           {
-            txt : 'Icon 图标' ,
+            txt : 'Icon图标Demo' ,
             pageurl : 'icon'
+          } ,
+          {
+            txt : 'Icon(所有图标)' ,
+            pageurl : 'iconall'
           } ,
 
           {
