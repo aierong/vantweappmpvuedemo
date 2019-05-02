@@ -1,6 +1,10 @@
 {
   "usingComponents": {
-    "van-icon": "/static/vant/icon/index"
+    "van-icon": "/static/vant/icon/index",
+    "van-tab": "/static/vant/tab/index",
+    "van-tabs": "/static/vant/tabs/index",
+    "van-row": "/static/vant/row/index",
+    "van-col": "/static/vant/col/index"
   },
   "navigationBarTitleText": "icon图标"
 }
