@@ -1,0 +1,23 @@
+.col {
+  text-align: center;
+  height: 100px;
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon {
+  display: block;
+  margin: 15px 0;
+  color: #455a64;
+}
+
+.text {
+  font-size: 12px;
+  padding: 0 5px;
+  line-height: 14px;
+}
+
+.demo-tab-pane {
+  padding-top: 10px;
+}
