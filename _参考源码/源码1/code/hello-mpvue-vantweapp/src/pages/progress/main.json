@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Progress 进度条",
+  "usingComponents":{
+    "van-panel": "/static/vant/panel/index",
+    "van-progress": "/static/vant/progress/index"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Radio 单选框",
+  "usingComponents":{
+    "van-panel":"/static/vant/panel/index",
+    "van-radio":"/static/vant/radio/index",
+    "van-radio-group":"/static/vant/radio-group/index"
+  }
+}

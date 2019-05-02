@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "Tab 标签页",
+  "usingComponents":{
+    "van-button":"/static/vant/button/index",
+    "van-panel":"/static/vant/panel/index",
+    "van-steps":"/static/vant/steps/index",
+    "van-tabs":"/static/vant/tabs/index",
+    "van-tab":"/static/vant/tab/index"
+
+  }
+
+}

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Toast 轻提示",
+  "usingComponents":{
+    "van-panel":"/static/vant/panel/index",
+    "van-toast":"/static/vant/toast/index",
+    "van-button":"/static/vant/button/index"
+  }
+}

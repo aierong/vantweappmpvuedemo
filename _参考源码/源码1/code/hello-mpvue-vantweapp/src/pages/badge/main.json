@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Badge 徽章",
+  "usingComponents":{
+    "van-badge-group":"/static/vant/badge-group/index",
+    "van-badge":"/static/vant/badge/index",
+    "van-panel":"/static/vant/panel/index"
+  }
+}

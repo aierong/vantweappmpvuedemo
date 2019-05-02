@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Picker选择器",
+  "usingComponents":{
+    "van-picker":"/static/vant/picker/index",
+    "van-toast":"/static/vant/toast/index",
+    "van-panel":"/static/vant/panel/index"
+  }
+}
