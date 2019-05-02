@@ -1,9 +1,10 @@
 <template>
   <div>
-    Vant Weapp组件库官方示例改写到Mpvue框架下
+    <view>Vant Weapp组件库官方示例改写到Mpvue框架下</view>
     <mybr/>
     <mybr/>
-    https://github.com/aierong/vantweappmpvuedemo
+    <view>https://github.com/aierong/vantweappmpvuedemo</view>
+
     <mybr/>
     <mybr/>
     <button open-type="share">分享我吧</button>
