@@ -16,7 +16,7 @@
                   icon="location-o"
                   @click="onclick(item.pageurl)"
                   is-link
-                  v-for="(item,index) in biaodanlist"
+                  v-for="(item,index) in BiaoDanList"
                   :key="index"/>
       </van-tab>
       <van-tab title="展示组件">
@@ -88,20 +88,20 @@
             pageurl : 'noticebar'
           } ,
         ] ,
-        biaodanlist : [
+        BiaoDanList : [
           {
             txt : 'Checkbox 复选框' ,
             pageurl : 'checkbox'
+          } ,
+          {
+            txt : 'DatetimePicker 时间选择' ,
+            pageurl : 'datetimepicker'
           } ,
           {
             txt : 'Radio 单选框' ,
             pageurl : 'radios'
           } ,
 
-          {
-            txt : 'DatetimePicker 时间选择' ,
-            pageurl : 'datetimepicker'
-          } ,
           {
             txt : 'Field 输入框' ,
             pageurl : 'field'
