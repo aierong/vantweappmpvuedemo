@@ -113,6 +113,10 @@
             txt : 'Field 输入框' ,
             pageurl : 'field'
           } ,
+          {
+            txt : 'Picker 选择器' ,
+            pageurl : 'picker'
+          } ,
 
         ] ,
         jichulist : [

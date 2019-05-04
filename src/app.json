@@ -26,7 +26,8 @@
     "pages/mydialog/main",
     "pages/readme/main",
     "pages/mytransition/main",
-    "pages/rate/main"
+    "pages/rate/main",
+    "pages/picker/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
