@@ -24,7 +24,8 @@
     "pages/mytoast/main",
     "pages/loading/main",
     "pages/mydialog/main",
-    "pages/readme/main"
+    "pages/readme/main",
+    "pages/mytransition/main"
   ],
   "window": {
     "backgroundTextStyle": "light",

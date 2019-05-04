@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-transition": "/static/vant/transition/index",
+    "van-button": "/static/vant/button/index"
+  },
+  "navigationBarTitleText": "Transition 动画"
+}
+
+

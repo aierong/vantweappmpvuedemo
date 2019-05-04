@@ -117,6 +117,10 @@
             pageurl : 'button'
           } ,
           {
+            txt : 'Cell单元格' ,
+            pageurl : 'mycell'
+          } ,
+          {
             txt : 'Icon图标Demo' ,
             pageurl : 'icon'
           } ,
@@ -125,10 +129,6 @@
             pageurl : 'iconall'
           } ,
 
-          {
-            txt : 'Cell单元格' ,
-            pageurl : 'mycell'
-          } ,
           {
             txt : 'Layout 布局' ,
             pageurl : 'layout'
@@ -141,6 +141,10 @@
           {
             txt : 'Popup 弹出层' ,
             pageurl : 'mypopup'
+          } ,
+          {
+            txt : 'Transition 动画' ,
+            pageurl : 'mytransition'
           } ,
         ] ,
 
