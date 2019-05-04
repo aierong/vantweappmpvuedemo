@@ -10,6 +10,7 @@ Time: 19:50
 
   <div>
     rate
+
   </div>
 
 </template>

@@ -101,15 +101,19 @@
             txt : 'Radio 单选框' ,
             pageurl : 'radios'
           } ,
-
           {
-            txt : 'Field 输入框' ,
-            pageurl : 'field'
+            txt : 'Rate 评分' ,
+            pageurl : 'rate'
           } ,
           {
             txt : 'Search 搜索' ,
             pageurl : 'search'
           } ,
+          {
+            txt : 'Field 输入框' ,
+            pageurl : 'field'
+          } ,
+
         ] ,
         jichulist : [
           {

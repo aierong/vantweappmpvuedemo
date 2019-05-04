@@ -25,7 +25,8 @@
     "pages/loading/main",
     "pages/mydialog/main",
     "pages/readme/main",
-    "pages/mytransition/main"
+    "pages/mytransition/main",
+    "pages/rate/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
