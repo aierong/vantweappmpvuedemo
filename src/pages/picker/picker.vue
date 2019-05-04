@@ -6,6 +6,25 @@ Time: 20:12
 -->
 
 <!-- html代码片段 -->
+
+<!--  特别提示:
+如果要给默认值:需要把数据定义为数组多列模式
+// values 存放值
+// defaultIndex初始选中项的索引，默认为 0
+
+cols : [
+{
+    values : [
+    '杭州' ,
+    '宁波' ,
+    '温州' ,
+    '嘉兴' ,
+    '湖州'
+    ] ,
+    defaultIndex : 2
+}
+]
+ -->
 <template>
 
   <div>
@@ -17,6 +36,9 @@ Time: 20:12
                 @change="onChange1"/>
     <mybr/>
     <mybr/>
+    <view>设置一个默认值</view>
+    <van-picker :columns="cols"
+                @change="onChange2"/>
   </div>
 
 </template>
@@ -35,15 +57,54 @@ Time: 20:12
       return {
         columns1 : [
           '杭州' , '宁波' , '温州' , '嘉兴' , '湖州'
+        ] ,
+
+        cols : [
+          {
+            values : [
+              '杭州' ,
+              '宁波' ,
+              '温州' ,
+              '嘉兴' ,
+              '湖州'
+            ] ,
+            defaultIndex : 2
+          }
         ]
       }
     } ,
     //方法
     methods : {
-      onChange1 () {
-        //代码搞这里
-      } ,
+      onChange1 ( event ) {
 
+        // console.log( event )
+        // console.log( event.mp.detail )
+
+        //可以得到选择的值和索引
+        let obj = event.mp.detail;
+        let selectval = obj.value;
+        let selectindex = obj.index;
+
+        console.log( selectval )
+        console.log( selectindex )
+      } ,
+      onChange2 ( event ) {
+        console.log( event )
+        console.log( event.mp.detail )
+
+        //可以得到选择的值
+        let obj = event.mp.detail;
+
+        //取到选择的值 //因为是多列了，所以是数组 我们取第1个
+        let selectval = obj.value[ 0 ];
+        console.log( selectval )
+
+        // console.log( obj.picker )
+        //getIndexes 方法得到 选择的索引  //因为是多列了，所以是数组 我们取第1个
+        let selectindex = obj.picker.getIndexes();
+        console.log( selectindex[ 0 ] )
+
+      }
     } ,
     //计算属性
     computed : {
