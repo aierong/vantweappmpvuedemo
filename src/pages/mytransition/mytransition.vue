@@ -28,6 +28,9 @@ Time: 19:39
 
   export default {
     name : "mytransition" ,
+    components : {
+      mybr
+    } ,
     //数据模型
     data () {
       return {

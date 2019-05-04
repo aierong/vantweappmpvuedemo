@@ -9,26 +9,40 @@ Time: 20:12
 <template>
 
   <div>
-    picker
+    <view>基础使用</view>
+    <!--
+    如果没有设置 default-index
+       会默认选择第1项-->
+    <van-picker :columns="columns1"
+                @change="onChange1"/>
+    <mybr/>
+    <mybr/>
   </div>
 
 </template>
 
 <!-- js脚本代码片段 -->
 <script>
+  import mybr from '@/components/mybr/mybr.vue'
+
   export default {
     name : "picker" ,
+    components : {
+      mybr
+    } ,
     //数据模型
     data () {
       return {
-        msg : ''
+        columns1 : [
+          '杭州' , '宁波' , '温州' , '嘉兴' , '湖州'
+        ]
       }
     } ,
     //方法
     methods : {
-      //methodsname() {
-      //代码搞这里
-      //},
+      onChange1 () {
+        //代码搞这里
+      } ,
 
     } ,
     //计算属性

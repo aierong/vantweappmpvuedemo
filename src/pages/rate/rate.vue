@@ -45,6 +45,9 @@ Time: 19:50
 
   export default {
     name : "rate" ,
+    components : {
+      mybr
+    } ,
     //数据模型
     data () {
       return {
