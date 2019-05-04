@@ -9,26 +9,36 @@ Time: 19:39
 <template>
 
   <div>
-    mytransition
+    <van-transition :show="show"
+                    custom-class="block">
+      内容
+    </van-transition>
+    <mybr/>
+    <mybr/>
+    <van-button @click="dj"
+                size="normal">普通按钮
+    </van-button>
   </div>
 
 </template>
 
 <!-- js脚本代码片段 -->
 <script>
+  import mybr from '@/components/mybr/mybr.vue'
+
   export default {
     name : "mytransition" ,
     //数据模型
     data () {
       return {
-        msg : ''
+        show : false
       }
     } ,
     //方法
     methods : {
-      //methodsname() {
-      //代码搞这里
-      //},
+      dj () {
+        this.show = !this.show;
+      } ,
 
     } ,
     //计算属性
