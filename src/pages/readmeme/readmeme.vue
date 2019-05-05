@@ -19,18 +19,15 @@
     components : {
       mybr
     } ,
-    data () {
-      return {
-        logs : [] ,
-
-      }
-    } ,
     onShareAppMessage () {
       return {
         title : 'Vant Weapp在mpvue中使用demo' ,
         path : '/pages/index/main' ,
         imageUrl : '/static/img/logo.png'
       }
+    } ,
+    data () {
+      return {}
     } ,
 
   }
