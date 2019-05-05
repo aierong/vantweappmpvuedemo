@@ -9,7 +9,17 @@ Time: 9:30
 <template>
 
   <div>
-    sliderSlider 滑块Slider 滑块
+    <view>基本使用</view>
+    <van-slider value="50"
+                @change="onChange1"/>
+    <mybr/>
+    <mybr/>
+    <view>最大，最小,步长</view>
+    <van-slider min="10"
+                max="90"
+                :value="v2"
+                step="5"
+                @change="onChange2"/>
   </div>
 
 </template>
@@ -26,14 +36,26 @@ Time: 9:30
     //数据模型
     data () {
       return {
-        msg : ''
+        v2 : 50
       }
     } ,
     //方法
     methods : {
-      //methodsname() {
-      //代码搞这里
-      //},
+      onChange1 ( event ) {
+        //取到值
+        let val = event.mp.detail;
+
+        console.log( val )
+
+      } ,
+      onChange2 ( event ) {
+        //取到值
+        let val = event.mp.detail;
+
+        console.log( val )
+
+        this.v2 = val;
+      } ,
 
     } ,
     //计算属性
