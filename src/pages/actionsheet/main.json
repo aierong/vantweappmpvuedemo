@@ -1,8 +1,7 @@
 {
   "usingComponents": {
-    "van-row": "/static/vant/row/index",
-    "van-col": "/static/vant/col/index",
-    "van-icon": "/static/vant/icon/index"
+    "van-action-sheet": "/static/vant/action-sheet/index",
+    "van-button": "/static/vant/button/index"
   },
   "navigationBarTitleText": "ActionSheet 上拉菜单"
 }
