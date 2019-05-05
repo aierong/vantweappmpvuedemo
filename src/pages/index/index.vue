@@ -107,9 +107,8 @@
           } ,
           {
             txt : 'Picker选择器(多列)' ,
-            pageurl : 'pickermorecol'
+            pageurl : 'pickermorecols'
           } ,
-
           {
             txt : 'Picker选择器(绑定对象)' ,
             pageurl : 'pickerobj'

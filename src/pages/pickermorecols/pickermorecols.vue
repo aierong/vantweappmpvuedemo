@@ -25,7 +25,7 @@ Time: 20:53
   };
 
   export default {
-    name : "pickermorecol" ,
+    name : "pickermorecols" ,
     components : {
       mybr
     } ,
@@ -70,5 +70,5 @@ Time: 20:53
 
 <!-- 样式代码片段  scoped -->
 <style scoped
-       src="./pickermorecol.css">
+       src="./pickermorecols.css">
 </style>

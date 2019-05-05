@@ -28,7 +28,7 @@
     "pages/mytransition/main",
     "pages/rate/main",
     "pages/picker/main",
-    "pages/pickermorecol/main",
+    "pages/pickermorecols/main",
     "pages/pickerobj/main",
     "pages/myslider/main",
     "pages/stepper/main",
