@@ -46,6 +46,13 @@ Time: 10:33
     components : {
       mybr
     } ,
+    onShareAppMessage () {
+      return {
+        title : 'Vant Weapp在mpvue中使用demo' ,
+        path : '/pages/index/main' ,
+        imageUrl : '/static/img/logo.png'
+      }
+    } ,
     //数据模型
     data () {
       return {
