@@ -121,6 +121,11 @@
             txt : 'Slider 滑块' ,
             pageurl : 'myslider'
           } ,
+          {
+            txt : 'Stepper 步进器' ,
+            pageurl : 'stepper'
+          } ,
+
 
         ] ,
         jichulist : [

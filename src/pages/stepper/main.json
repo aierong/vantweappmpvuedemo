@@ -4,7 +4,7 @@
     "van-col": "/static/vant/col/index",
     "van-icon": "/static/vant/icon/index"
   },
-  "navigationBarTitleText": "Layout 布局"
+  "navigationBarTitleText": "Stepper 步进器"
 }
 
 
