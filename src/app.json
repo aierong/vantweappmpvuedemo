@@ -28,7 +28,8 @@
     "pages/mytransition/main",
     "pages/rate/main",
     "pages/picker/main",
-    "pages/myslider/main"
+    "pages/myslider/main",
+    "pages/stepper/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
