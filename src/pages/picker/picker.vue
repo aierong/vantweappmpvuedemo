@@ -39,6 +39,25 @@ cols : [
     <view>设置一个默认值</view>
     <van-picker :columns="cols"
                 @change="onChange2"/>
+    <mybr/>
+    <mybr/>
+    <mybr/>
+    <view>弹出选择</view>
+    <van-button size="large"
+                @click="tanchu"
+                type="primary">弹出
+    </van-button>
+    <van-popup :show="popupshow3"
+               position="bottom">
+
+      <!--     -->
+
+      <van-picker :columns="columns3"
+                  show-toolbar
+                  title="标题"
+                  @cancel="onCancel3"
+                  @confirm="onConfirm3"/>
+    </van-popup>
   </div>
 
 </template>
@@ -70,7 +89,12 @@ cols : [
             ] ,
             defaultIndex : 2
           }
-        ]
+        ] ,
+
+        popupshow3 : false ,
+        columns3 : [
+          '杭州' , '宁波' , '温州' , '嘉兴' , '湖州'
+        ] ,
       }
     } ,
     //方法
@@ -104,6 +128,25 @@ cols : [
         let selectindex = obj.picker.getIndexes();
         console.log( selectindex[ 0 ] )
 
+      } ,
+      tanchu () {
+        this.popupshow3 = true;
+      } ,
+      onCancel3 () {
+        this.popupshow3 = false;
+      } ,
+      onConfirm3 ( event ) {
+        console.log( event )
+
+        //可以得到选择的值和索引
+        let obj = event.mp.detail;
+        let selectval = obj.value;
+        let selectindex = obj.index;
+
+        console.log( selectval )
+        console.log( selectindex )
+
+        this.popupshow3 = false;
       }
     } ,
     //计算属性

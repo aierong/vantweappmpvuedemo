@@ -1,6 +1,8 @@
 {
   "usingComponents": {
-    "van-picker": "/static/vant/picker/index"
+    "van-picker": "/static/vant/picker/index",
+    "van-button": "/static/vant/button/index",
+    "van-popup": "/static/vant/popup/index"
   },
   "navigationBarTitleText": "Picker 选择器"
 }
