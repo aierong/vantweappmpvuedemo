@@ -20,6 +20,23 @@ Time: 9:30
                 :value="v2"
                 step="5"
                 @change="onChange2"/>
+    <mybr/>
+    <mybr/>
+    <view>自定义</view>
+    <!--
+    bar-height	进度条高度
+    -->
+    <van-slider :value="currentValue"
+                custom-class="slider"
+                use-button-slot
+                active-color="#f44"
+                bar-height="4px"
+                @drag="onDrag">
+      <view class="custom-button"
+            slot="button">
+        {{ currentValue }}
+      </view>
+    </van-slider>
   </div>
 
 </template>
@@ -36,7 +53,8 @@ Time: 9:30
     //数据模型
     data () {
       return {
-        v2 : 50
+        v2 : 50 ,
+        currentValue : 50
       }
     } ,
     //方法
@@ -56,7 +74,14 @@ Time: 9:30
 
         this.v2 = val;
       } ,
+      onDrag ( event ) {
+        //value属性中取到值
+        let val = event.mp.detail.value;
 
+        console.log( val )
+
+        this.currentValue = val;
+      } ,
     } ,
     //计算属性
     computed : {
