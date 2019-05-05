@@ -4,7 +4,6 @@
     <mybr/>
     <mybr/>
     <view>https://github.com/aierong/vantweappmpvuedemo</view>
-
     <mybr/>
     <mybr/>
     <button open-type="share">分享我吧</button>
@@ -16,7 +15,7 @@
   import mybr from '@/components/mybr/mybr.vue'
 
   export default {
-    name : "search" ,
+    name : "readme" ,
     components : {
       mybr
     } ,
@@ -33,12 +32,10 @@
         imageUrl : '/static/img/logo.png'
       }
     } ,
-    created () {
 
-    }
   }
 </script>
 
-<style src="./readme.css">
-
+<style scoped
+       src="./readme.css">
 </style>

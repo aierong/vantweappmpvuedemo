@@ -9,6 +9,8 @@ Time: 10:33
 <template>
 
   <div>
+    <mybr/>
+    <mybr/>
     actionsheetactionsheetactionsheet
   </div>
 
@@ -16,8 +18,13 @@ Time: 10:33
 
 <!-- js脚本代码片段 -->
 <script>
+  import mybr from '@/components/mybr/mybr.vue'
+
   export default {
     name : "actionsheet" ,
+    components : {
+      mybr
+    } ,
     //数据模型
     data () {
       return {
