@@ -28,6 +28,7 @@
     "pages/mytransition/main",
     "pages/rate/main",
     "pages/picker/main",
+    "pages/pickermorecol/main",
     "pages/myslider/main",
     "pages/stepper/main",
     "pages/actionsheet/main"

@@ -106,6 +106,11 @@
             pageurl : 'picker'
           } ,
           {
+            txt : 'Picker选择器(多列)' ,
+            pageurl : 'pickermorecol'
+          } ,
+
+          {
             txt : 'Radio 单选框' ,
             pageurl : 'radios'
           } ,

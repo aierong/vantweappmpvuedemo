@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-picker": "/static/vant/picker/index"
+  },
+  "navigationBarTitleText": "picker 多列"
+}
+
+
