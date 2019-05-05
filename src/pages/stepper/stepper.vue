@@ -9,9 +9,11 @@ Time: 9:58
 <template>
 
   <div>
-    stepperstepperstepper
+    <van-stepper :value="val1"
+                 @change="onChange1"/>
     <mybr/>
     <mybr/>
+
   </div>
 
 </template>
@@ -28,14 +30,17 @@ Time: 9:58
     //数据模型
     data () {
       return {
-        msg : ''
+        val1 : 11
       }
     } ,
     //方法
     methods : {
-      //methodsname() {
-      //代码搞这里
-      //},
+      onChange1 ( event ) {
+        //
+        console.log( event )
+
+        this.val1 = event.mp.detail
+      } ,
 
     } ,
     //计算属性

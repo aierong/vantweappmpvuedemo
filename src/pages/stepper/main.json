@@ -1,8 +1,6 @@
 {
   "usingComponents": {
-    "van-row": "/static/vant/row/index",
-    "van-col": "/static/vant/col/index",
-    "van-icon": "/static/vant/icon/index"
+    "van-stepper": "/static/vant/stepper/index"
   },
   "navigationBarTitleText": "Stepper 步进器"
 }

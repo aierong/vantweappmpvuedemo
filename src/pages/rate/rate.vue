@@ -58,7 +58,7 @@ Time: 19:50
     //方法
     methods : {
       onChange1 ( event ) {
-        //代码搞这里
+        //
         console.log( event )
 
         this.val1 = event.mp.detail
