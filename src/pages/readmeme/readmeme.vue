@@ -15,7 +15,7 @@
   import mybr from '@/components/mybr/mybr.vue'
 
   export default {
-    name : "readme" ,
+    name : "readmeme" ,
     components : {
       mybr
     } ,
@@ -37,5 +37,5 @@
 </script>
 
 <style scoped
-       src="./readme.css">
+       src="./readmeme.css">
 </style>

@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './readme'
+import App from './readmeme'
 
 const app = new Vue( App )
 app.$mount()

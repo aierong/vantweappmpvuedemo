@@ -24,7 +24,7 @@
     "pages/mytoast/main",
     "pages/loading/main",
     "pages/mydialog/main",
-    "pages/readme/main",
+    "pages/readmeme/main",
     "pages/mytransition/main",
     "pages/rate/main",
     "pages/picker/main",
@@ -52,7 +52,7 @@
       },
       {
         "text": "说明",
-        "pagePath": "pages/readme/main",
+        "pagePath": "pages/readmeme/main",
         "iconPath": "static/tabs/orders.png",
         "selectedIconPath": "static/tabs/orders-active.png"
       }
