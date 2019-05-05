@@ -177,6 +177,11 @@
 
         ] ,
         FanKuiList : [
+
+          {
+            txt : 'ActionSheet 上拉菜单' ,
+            pageurl : 'actionsheet'
+          } ,
           {
             txt : 'Notify 消息提示' ,
             pageurl : 'mynotify'

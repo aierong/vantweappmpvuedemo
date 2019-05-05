@@ -29,7 +29,8 @@
     "pages/rate/main",
     "pages/picker/main",
     "pages/myslider/main",
-    "pages/stepper/main"
+    "pages/stepper/main",
+    "pages/actionsheet/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
