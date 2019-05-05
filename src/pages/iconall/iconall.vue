@@ -9,38 +9,38 @@ Time: 22:56
 <template>
 
   <div>
+    <!--    custom-class="demo-tab-pane"
+
+    -->
     <van-tabs :active="active"
               @change="onSwitch">
-      <van-tab title="基础图标"
-               custom-class="demo-tab-pane">
+      <van-tab title="基础图标">
+        <!--        custom-class="col"-->
         <van-col v-for="item in icons.basic"
                  :key="item"
-                 custom-class="col"
-                 span="6">
+                 span="8">
           <van-icon :name="item"
                     size="32px"
                     custom-class="icon"/>
           <div class="text">{{ item }}</div>
         </van-col>
       </van-tab>
-      <van-tab title="线框风格"
-               custom-class="demo-tab-pane">
+      <van-tab title="线框风格">
+        <!--        custom-class="col"-->
         <van-col v-for="item in icons.outline"
                  :key="item"
-                 custom-class="col"
-                 span="6">
+                 span="8">
           <van-icon :name="item"
                     size="32px"
                     custom-class="icon"/>
           <div class="text">{{ item }}</div>
         </van-col>
       </van-tab>
-      <van-tab title="实底风格"
-               custom-class="demo-tab-pane">
+      <van-tab title="实底风格">
+        <!--        custom-class="col"-->
         <van-col v-for="item in icons.filled"
                  :key="item"
-                 custom-class="col"
-                 span="6">
+                 span="8">
           <van-icon :name="item"
                     size="32px"
                     custom-class="icon"/>

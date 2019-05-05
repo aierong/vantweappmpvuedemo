@@ -11,7 +11,7 @@ export default {
     'arrow-down'
   ],
   outline: [
-    // has corresponding filled icon
+
     'location-o',
     'like-o',
     'star-o',
@@ -24,6 +24,7 @@ export default {
     'cart-circle-o',
     'friends-o',
     'comment-o',
+
     'gem-o',
     'gift-o',
     'point-gift-o',
