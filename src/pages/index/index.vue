@@ -19,6 +19,14 @@
                   v-for="(item,index) in BiaoDanList"
                   :key="index"/>
       </van-tab>
+      <van-tab title="反馈组件">
+        <van-cell v-for="(item,index) in FanKuiList"
+                  :key="index"
+                  :title="item.txt"
+                  icon="location-o"
+                  @click="onclick(item.pageurl)"
+                  is-link/>
+      </van-tab>
       <van-tab title="展示组件">
         <van-cell :title="item.txt"
                   icon="location-o"
@@ -27,6 +35,7 @@
                   v-for="(item,index) in zhangshilist"
                   :key="index"/>
       </van-tab>
+
       <van-tab title="导航组件">
 
         <van-cell v-for="(item,index) in DaoHanList"
@@ -38,15 +47,6 @@
 
       </van-tab>
 
-
-      <van-tab title="反馈组件">
-        <van-cell v-for="(item,index) in FanKuiList"
-                  :key="index"
-                  :title="item.txt"
-                  icon="location-o"
-                  @click="onclick(item.pageurl)"
-                  is-link/>
-      </van-tab>
 
       <!--
       <van-tab title="标签6">内容 6</van-tab>
@@ -125,7 +125,6 @@
             txt : 'Stepper 步进器' ,
             pageurl : 'stepper'
           } ,
-
 
         ] ,
         jichulist : [
