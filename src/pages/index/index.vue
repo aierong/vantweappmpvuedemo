@@ -111,6 +111,10 @@
           } ,
 
           {
+            txt : 'Picker选择器(绑定对象)' ,
+            pageurl : 'pickerobj'
+          } ,
+          {
             txt : 'Radio 单选框' ,
             pageurl : 'radios'
           } ,

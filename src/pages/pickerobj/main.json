@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-picker": "/static/vant/picker/index",
+    "van-button": "/static/vant/button/index"
+  },
+  "navigationBarTitleText": "Picker选择器(绑定对象)"
+}
+
+
