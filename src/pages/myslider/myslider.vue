@@ -16,8 +16,13 @@ Time: 9:30
 
 <!-- js脚本代码片段 -->
 <script>
+  import mybr from '@/components/mybr/mybr.vue'
+
   export default {
     name : "myslider" ,
+    components : {
+      mybr
+    } ,
     //数据模型
     data () {
       return {
