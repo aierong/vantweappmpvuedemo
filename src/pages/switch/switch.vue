@@ -19,8 +19,7 @@ Time: 19:49
                 :checked="checked2"
                 size="48px"
                 active-color="#07c160"
-                inactive-color="#f44"
-    />
+                inactive-color="#f44"/>
   </div>
 
 </template>
