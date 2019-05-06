@@ -33,7 +33,8 @@
     "pages/myslider/main",
     "pages/stepper/main",
     "pages/actionsheet/main",
-    "pages/switch/main"
+    "pages/switch/main",
+    "pages/badge/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
