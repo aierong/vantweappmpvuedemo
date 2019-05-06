@@ -44,6 +44,9 @@ Time: 20:12
     <mybr/>
     <mybr/>
     <view>自定义图标</view>
+    <!--
+    可以通过 slot 自定义图标，其中 icon slot 代表未选中状态下的图标，icon-active slot 代表选中状态下的图标
+    -->
     <van-tabbar :active="active3"
                 :fixed="isfixed"
                 @change="onChange3">
