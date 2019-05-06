@@ -133,6 +133,10 @@
             txt : 'Stepper 步进器' ,
             pageurl : 'stepper'
           } ,
+          {
+            txt : 'Switch 开关' ,
+            pageurl : 'switch'
+          } ,
 
         ] ,
         jichulist : [

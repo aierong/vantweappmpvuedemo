@@ -32,7 +32,8 @@
     "pages/pickerobj/main",
     "pages/myslider/main",
     "pages/stepper/main",
-    "pages/actionsheet/main"
+    "pages/actionsheet/main",
+    "pages/switch/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
