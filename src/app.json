@@ -34,7 +34,8 @@
     "pages/stepper/main",
     "pages/actionsheet/main",
     "pages/switch/main",
-    "pages/badge/main"
+    "pages/badge/main",
+    "pages/mytabbar/main"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -186,13 +186,16 @@
             pageurl : 'badge'
           } ,
           {
+            txt : 'NavBar 导航栏' ,
+            pageurl : 'navbar'
+          } ,
+          {
             txt : 'Tab 标签页' ,
             pageurl : 'tab'
           } ,
-
           {
-            txt : 'NavBar 导航栏' ,
-            pageurl : 'navbar'
+            txt : 'Tabbar 标签栏' ,
+            pageurl : 'mytabbar'
           } ,
 
         ] ,
