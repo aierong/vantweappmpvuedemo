@@ -52,7 +52,7 @@ Time: 20:12
                src="/static/img/Add_32x32.png"
                mode="aspectFit"/>
         <image slot="icon-active"
-               src="/static/img/AddFile_32x32.png"
+               src="/static/img/Add_active.png"
                mode="aspectFit"/>
         自定义
       </van-tabbar-item>
