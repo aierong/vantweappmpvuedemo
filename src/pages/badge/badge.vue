@@ -9,6 +9,9 @@ Time: 19:59
 <template>
 
   <div>
+    <!--
+    通过在van-badge-group上设置active属性来控制选中的badge
+    -->
     <van-badge-group active="active1"
                      @change="onChange1">
       <van-badge title="标签名称"/>
@@ -19,6 +22,7 @@ Time: 19:59
       <van-badge title="标签名称"
                  info="99+"/>
     </van-badge-group>
+
   </div>
 
 </template>
