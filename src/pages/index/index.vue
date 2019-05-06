@@ -65,6 +65,7 @@
       return {
         //从0开始的
         activeval : 0 ,
+
         zhangshilist : [
           {
             txt : 'Panel 面板' ,
@@ -88,6 +89,7 @@
             pageurl : 'noticebar'
           } ,
         ] ,
+
         BiaoDanList : [
           {
             txt : 'Checkbox 复选框' ,
@@ -139,6 +141,7 @@
           } ,
 
         ] ,
+
         jichulist : [
           {
             txt : '按钮' ,
@@ -177,6 +180,11 @@
         ] ,
 
         DaoHanList : [
+
+          {
+            txt : 'Badge 徽章' ,
+            pageurl : 'badge'
+          } ,
           {
             txt : 'Tab 标签页' ,
             pageurl : 'tab'
