@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "van-steps": "/static/vant/steps/index"
+    "van-badge": "/static/vant/badge/index",
+    "van-badge-group": "/static/vant/badge-group/index"
   },
   "navigationBarTitleText": "Badge 徽章"
 }
