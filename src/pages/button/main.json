@@ -2,7 +2,9 @@
   "usingComponents": {
     "van-button": "/static/vant/button/index"
   },
-  "navigationBarTitleText": "按钮"
+  "navigationBarTitleText": "按钮",
+  "backgroundTextStyle": "dark",
+  "backgroundColor": "#eeeeee"
 }
 
 

@@ -38,8 +38,9 @@
     "pages/mytabbar/main"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#eeeeee",
+    "navigationBarBackgroundColor": "#f8f8f8",
     "navigationBarTitleText": "mpvue中使用Vant Weapp",
     "navigationBarTextStyle": "black"
   },
