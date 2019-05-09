@@ -4,3 +4,8 @@
   text-align: center;
   background-color: #fff;
 }
+
+/*设置这个 就是设置其的背景颜色*/
+.dark {
+  background-color: #fff;
+}

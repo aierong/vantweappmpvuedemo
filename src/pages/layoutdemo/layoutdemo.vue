@@ -9,22 +9,25 @@
   <div>
     <div>自做demo</div>
     <van-row class="user-links">
-      <van-col span="6">
+      <van-col custom-class="dark" span="6">
         <van-icon name="pending-payment"
                   size="36px"/>
         <br>待付款
       </van-col>
-      <van-col span="6">
+      <van-col custom-class="dark"
+               span="6">
         <van-icon name="bag"
                   size="36px"/>
         <br>待接单
       </van-col>
-      <van-col span="6">
+      <van-col custom-class="dark"
+               span="6">
         <van-icon name="fire"
                   size="36px"/>
         <br>待发货
       </van-col>
-      <van-col span="6">
+      <van-col custom-class="dark"
+               span="6">
         <van-icon name="logistics"
                   size="36px"/>
         <br>待发货
@@ -32,21 +35,24 @@
     </van-row>
     <mybr/>
     <mybr/>
-    <div>九宫格</div>
+    <div style="margin-left: 10px;">九宫格</div>
     <van-row class="user-links">
-      <van-col span="8">
+      <van-col custom-class="dark"
+               span="8">
         <van-icon @click="dj"
                   name="pending-payment"
                   size="36px"/>
         <br>待付款
       </van-col>
-      <van-col span="8">
+      <van-col custom-class="dark"
+               span="8">
         <van-icon @click="dj"
                   name="bag"
                   size="36px"/>
         <br>待接单
       </van-col>
-      <van-col span="8">
+      <van-col custom-class="dark"
+               span="8">
         <van-icon @click="dj"
                   name="fire"
                   size="36px"/>
@@ -55,17 +61,20 @@
 
     </van-row>
     <van-row class="user-links">
-      <van-col span="8">
+      <van-col custom-class="dark"
+               span="8">
         <van-icon name="play"
                   size="36px"/>
         <br>待付款
       </van-col>
-      <van-col span="8">
+      <van-col custom-class="dark"
+               span="8">
         <van-icon name="bag"
                   size="36px"/>
         <br>待接单
       </van-col>
-      <van-col span="8">
+      <van-col custom-class="dark"
+               span="8">
         <van-icon name="fire"
                   size="36px"/>
         <br>待发货
@@ -73,17 +82,20 @@
 
     </van-row>
     <van-row class="user-links">
-      <van-col span="8">
+      <van-col custom-class="dark"
+               span="8">
         <van-icon name="chat"
                   size="36px"/>
         <br>待付款
       </van-col>
-      <van-col span="8">
+      <van-col custom-class="dark"
+               span="8">
         <van-icon name="close"
                   size="36px"/>
         <br>待接单
       </van-col>
-      <van-col span="8">
+      <van-col custom-class="dark"
+               span="8">
         <van-icon name="success"
                   size="36px"/>
         <br>待发货
