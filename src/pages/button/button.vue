@@ -7,19 +7,21 @@
 <template>
 
   <div>
+    <view>按钮类型</view>
     <van-button type="default">默认按钮</van-button>
 
-    <mybr></mybr>
+
     <van-button type="primary">主要按钮</van-button>
-    <mybr/>
+
     <van-button type="info">信息按钮</van-button>
-    <mybr/>
+
     <van-button type="warning">警告按钮</van-button>
-    <mybr/>
+
     <van-button @click="dj"
                 type="danger">危险按钮
     </van-button>
     <mybr/>
+    <view>朴素按钮</view>
     <van-button plain
                 type="primary">朴素按钮
     </van-button>
@@ -27,6 +29,17 @@
                 type="danger">朴素按钮
     </van-button>
     <mybr/>
+    <view>细边框</view>
+    <van-button plain
+                hairline
+                type="primary">细边框按钮
+    </van-button>
+    <van-button plain
+                hairline
+                type="danger">细边框按钮
+    </van-button>
+    <mybr/>
+    <view>禁用按钮</view>
     <van-button disabled
                 type="primary">禁用状态
     </van-button>
@@ -34,12 +47,22 @@
                 type="danger">禁用状态
     </van-button>
     <mybr/>
+    <view>加载状态</view>
     <van-button loading
                 type="primary"/>
     <van-button loading
                 type="danger"
                 loading-text="加载中..."/>
     <mybr/>
+    <view>按钮形状</view>
+    <van-button square
+                type="primary">方形按钮
+    </van-button>
+    <van-button round
+                type="danger">圆形按钮
+    </van-button>
+    <mybr/>
+    <view>按钮尺寸</view>
     <van-button size="large">大号按钮</van-button>
     <van-button size="normal">普通按钮</van-button>
     <van-button size="small">小型按钮</van-button>
