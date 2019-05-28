@@ -35,7 +35,8 @@
     "pages/actionsheet/main",
     "pages/switch/main",
     "pages/badge/main",
-    "pages/mytabbar/main"
+    "pages/mytabbar/main",
+    "pages/scanbarcode/main"
   ],
   "window": {
     "backgroundTextStyle": "dark",

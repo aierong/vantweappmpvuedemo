@@ -7,6 +7,10 @@
     <mybr/>
     <mybr/>
     <button open-type="share">分享我吧</button>
+    <mybr/>
+    <mybr/>
+    <button @click="sm">扫码功能</button>
+
   </div>
 </template>
 
@@ -29,7 +33,14 @@
     data () {
       return {}
     } ,
+    //方法
+    methods : {
+      sm () {
+        const url = "../scanbarcode/main"
+        wx.navigateTo( { url : url } )
+      } ,
 
+    } ,
   }
 </script>
 
