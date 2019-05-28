@@ -47,7 +47,9 @@ Time: 16:33
 
             console.log( res )
 
+            //条码值
             this.bar1 = res.result;
+            //条码类型
             this.bartype1 = res.scanType;
           } ,
           fail : ( err ) => {
