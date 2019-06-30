@@ -3,7 +3,8 @@
     "van-checkbox": "/static/vant/checkbox/index",
     "van-checkbox-group": "/static/vant/checkbox-group/index",
     "van-cell": "/static/vant/cell/index",
-    "van-cell-group": "/static/vant/cell-group/index"
+    "van-cell-group": "/static/vant/cell-group/index",
+    "van-button": "/static/vant/button/index"
   },
   "navigationBarTitleText": "Checkbox 复选框"
 }

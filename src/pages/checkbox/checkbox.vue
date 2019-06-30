@@ -32,11 +32,22 @@
         复选框 {{ item }}
       </van-checkbox>
     </van-checkbox-group>
+    <van-button @click="dj"
+                type="info">刷新列表
+    </van-button>
+    <!--
+checkbox-group 中刷新数据后之前选中的没有选中状态
+
+参考:
+https://github.com/youzan/vant-weapp/issues/1486
+-->
 
     <mybr/>
     <mybr/>
     <div>与Cell组件一起使用</div>
-    <!--    实现单击cell或者checkbox都可以选择-->
+    <!--
+    实现单击cell或者checkbox都可以选择
+    -->
     <van-checkbox-group :value="resulta"
                         @change="onChangea">
       <van-cell-group>
@@ -115,7 +126,14 @@
         }
 
       } ,
+      dj () {
+        this.list1 = [ 'B' , 'C' , 'E' , 'F' , 'G' ]
 
+        //     checkbox-group 中刷新数据后之前选中的没有选中状态
+        // 参考:
+        //   https://github.com/youzan/vant-weapp/issues/1486
+        //
+      } ,
     } ,
     //计算属性
     computed : {
