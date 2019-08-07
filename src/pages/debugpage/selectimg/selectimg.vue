@@ -82,12 +82,12 @@ Time: 10:38
                     sizeType : [ 'original' , 'compressed' ] ,  //可选择原图或压缩后的图片
                     sourceType : [ type ] , //可选择性开放访问相册、相机
                     success : res => {
-                        console.log( res )
-                        console.log( res.tempFilePaths )
+                        // console.log( res )
+                        // console.log( res.tempFilePaths )
 
                         this.imgdata2 = res.tempFilePaths[ 0 ];
 
-                        console.log( this.imgdata )
+                        // console.log( this.imgdata )
                     }
                 } )
             } ,
