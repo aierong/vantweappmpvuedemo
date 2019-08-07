@@ -41,7 +41,7 @@
         //方法
         methods : {
             sm () {
-                const url = "../scanbarcode/main"
+                const url = "../debugpage/scanbarcode/main"
                 wx.navigateTo( { url : url } )
             } ,
             imgselect () {

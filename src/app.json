@@ -36,7 +36,7 @@
     "pages/switch/main",
     "pages/badge/main",
     "pages/mytabbar/main",
-    "pages/scanbarcode/main",
+    "pages/debugpage/scanbarcode/main",
     "pages/debugpage/selectimg/main"
   ],
   "window": {
