@@ -49,12 +49,13 @@ Time: 10:38
                     sizeType : [ 'original' , 'compressed' ] ,  //可选择原图或压缩后的图片
                     sourceType : [ 'album' , 'camera' ] , //可选择性开放访问相册、相机
                     success : res => {
-                        console.log( res )
-                        console.log( res.tempFilePaths )
+                        // console.log( res )
+
+                        // console.log( res.tempFilePaths )
 
                         this.imgdata = res.tempFilePaths[ 0 ];
 
-                        console.log( this.imgdata )
+                        // console.log( this.imgdata )
                     }
                 } )
             } ,
@@ -66,10 +67,11 @@ Time: 10:38
                     success : res => {
                         //tapIndex就是用户点击的按钮序号,从上到下的顺序,从0开始
                         let index = res.tapIndex;
-                        //console.log( index )
+
+                        // console.log( index )
 
                         //调用方法
-                        this.imgopen( index == 1 ? 'album' : 'camera' )
+                        this.imgopen( index == 1 ? 'camera' : 'album' )
                     }
                 } );
             } ,
