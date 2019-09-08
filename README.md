@@ -1,26 +1,22 @@
-**mpvue中使用Vant Weapp**  
+# mpvue中使用Vant Weapp
 
-Vant Weapp组件库官方示例改写到Mpvue框架下   
-https://github.com/aierong/vantweappmpvuedemo  
-
-
+- Vant Weapp组件库官方示例改写到Mpvue框架下   
+  https://github.com/aierong/vantweappmpvuedemo  
 
 
+- 手机微信扫描体验
 
-     
-
-
-**可以手机微信扫描体验一下:** 
-
-![](mdresourcefile/barcode.jpg)
+  ![](mdresourcefile/barcode.jpg)
 
 
+
+- 使用步骤
 
 
 ``` 
 
 
-使用步骤:
+
 1.从Vant Weapp官网github克隆一份代码下来
 https://github.com/youzan/vant-weapp 
 
@@ -64,9 +60,8 @@ https://youzan.github.io/vant-weapp
 ```
 
    
-   
-   
-**功能预览:**   
+
+- 功能预览
 
 ![](mdresourcefile/ui1.png)
 
@@ -81,5 +76,10 @@ https://youzan.github.io/vant-weapp
 
 
 ![](mdresourcefile/ui3.png)
+
+
+
+
+
 
 
